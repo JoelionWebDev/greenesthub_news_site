@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { CATEGORIES } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
 
-const SITE_URL = "https://greenesthub.com.ng";
+const SITE_URL = "https://greennesthub.com.ng";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
