@@ -83,6 +83,7 @@ export async function publishAction(
   if (!CATEGORIES.some((c) => c.slug === category)) {
     return { ok: false, error: "Please choose a valid category." };
   }
+  
   const date = new Date().toISOString().slice(0, 10);
   const baseSlug = slugify(title);
   const markdown = [
