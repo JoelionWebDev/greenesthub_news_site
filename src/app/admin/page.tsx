@@ -5,7 +5,7 @@ import LoginForm from "@/components/LoginForm";
 import AdminEditor from "@/components/AdminEditor";
 
 export const metadata = {
-  title: "Admin | Greenest Hub",
+  title: "Admin | Greennest Hub",
   robots: { index: false, follow: false },
 };
 
@@ -20,25 +20,23 @@ export const metadata = {
  */
 async function AdminContent() {
   const loggedIn = await isLoggedIn();
-
   if (!loggedIn) {
     return (
       <>
         <h1>🔐 Admin Login</h1>
         <p className="lede">
-          This area is for the Greenest Hub owner only. Log in to write and publish new stories.
+          This area is for the Greennest Hub owner only. Log in to write and publish new stories.
         </p>
         <LoginForm />
       </>
     );
   }
-
   const posts = getAllPosts();
   return (
     <>
       <h1>✍️ Write a New Story</h1>
       <p className="lede">
-        Fill in the story below and press Publish. It is saved to the Greenest Hub
+        Fill in the story below and press Publish. It is saved to the Greennest Hub
         repository and goes live on the site after the next deploy (about a minute).
       </p>
       <AdminEditor posts={posts} />
