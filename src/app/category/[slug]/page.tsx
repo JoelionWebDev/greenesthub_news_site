@@ -21,7 +21,7 @@ export async function generateMetadata({
     title: `${category.name} Stories`,
     description: category.description,
     openGraph: {
-      title: `${category.name} | Greenest Hub`,
+      title: `${category.name} | Greennest Hub`,
       description: category.description,
       images: [{ url: category.image, width: 1920, height: 1280, alt: category.name }],
     },
@@ -37,7 +37,6 @@ export default async function CategoryPage({
   const category = getCategory(slug);
   if (!category) notFound();
   const posts = getPostsByCategory(slug);
-
   return (
     <div className="wrap">
       <header className="page-head">
