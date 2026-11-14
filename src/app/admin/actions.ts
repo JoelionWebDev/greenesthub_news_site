@@ -94,7 +94,7 @@ export async function publishAction(
     `excerpt: "${escapeYaml(excerpt)}"`,
     `coverImage: ${coverImage}`,
     `date: ${date}`,
-    `author: "Greennest Hub"`,
+    'author: "Greennest Hub"',
     "---",
         "",
     body,
