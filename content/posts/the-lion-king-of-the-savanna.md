@@ -5,7 +5,7 @@ category: wild-animals
 excerpt: "With a mighty roar and a golden mane, the lion is the king of the savanna. Come and meet the big cat that lives in a family — and sleeps most of the day!"
 coverImage: /images/hero-lion.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 Have you ever heard a lion roar? It is one of the loudest sounds in the whole animal kingdom! A lion's roar can be heard from many kilometres away, rolling across the grasslands like thunder. Lions are called the kings of the savanna — but what makes them so special? Let us find out.

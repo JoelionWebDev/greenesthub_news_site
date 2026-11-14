@@ -5,7 +5,7 @@ category: animals-and-humans
 excerpt: "For thousands of years, horses have carried us, helped us farm and even healed us. Discover how the horse became one of humanity's greatest friends!"
 coverImage: /images/category-humans.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 Long ago, before cars, trains or aeroplanes, there was a way to travel far and fast: on the back of a horse. Horses have been friends and helpers of humans for thousands of years, and they changed the world. They carried messages across whole countries, helped farmers grow food, and pulled heavy loads that no person could move alone. Even today, in a world full of machines, horses are still loved, admired and needed.

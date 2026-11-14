@@ -5,7 +5,7 @@ category: domestic-animals
 excerpt: "Cats are soft, clever and full of surprises — they can see in the dark, land on their feet and purr when they are happy. Come and meet the world's favourite little hunter!"
 coverImage: /images/cat.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 Soft fur, bright eyes, a tail that swishes like a question mark — a cat is one of the most popular pets in the whole world. But cats are not like dogs. A dog wants to be your best friend all day long. A cat is more like a polite neighbour who visits when it feels like it — and then decides to stay for a nap on your lap. Let us find out what makes cats so special.

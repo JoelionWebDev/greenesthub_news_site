@@ -5,7 +5,7 @@ category: domestic-animals
 excerpt: "Dogs have been our friends for thousands of years. With super noses, clever ears and waggy tails, they are the best companions a human could ask for!"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 What animal wags its tail when it sees you, follows you from room to room, and loves you just the way you are? A dog, of course! Dogs are often called "man's best friend", and they have earned that name. They have lived beside humans for thousands of years, helping us, guarding us and making us laugh. Let us find out why dogs are so special.

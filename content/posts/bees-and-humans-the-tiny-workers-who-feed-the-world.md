@@ -5,7 +5,7 @@ category: animals-and-humans
 excerpt: "Bees are tiny, but they do a giant job: they help plants make the fruits and vegetables we eat. Meet the honeybee, its waggle dance, and the people who care for hives!"
 coverImage: /images/bees.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 Imagine a tiny animal, smaller than your thumb, that helps grow the apples in your lunchbox, the strawberries in your cake and the tomatoes in your salad. That animal is a bee! Bees are some of the most important animals on Earth, and humans have loved and looked after them for thousands of years. Let us meet the busy honeybee.

@@ -5,7 +5,7 @@ category: wild-animals
 excerpt: "Elephants are the largest animals on land, with clever trunks, huge ears and memories that last for years. Meet the gentle giants of Africa and Asia!"
 coverImage: /images/category-wild.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 
 Imagine an animal as tall as a house, as heavy as a school bus, and as gentle as a grandmother. That is an elephant! Elephants are the largest land animals on Earth, and they are also some of the cleverest and kindest animals in the wild. Let us meet them.
