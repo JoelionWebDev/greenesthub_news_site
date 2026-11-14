@@ -1,4 +1,4 @@
-# Greenest Hub — greenesthub.com.ng
+# Greennest Hub — greennesthub.com.ng
 
 A bright, child-friendly animal blog: wild animals, domestic animals, and
 animals & humans. Built with Next.js 16, React 19 and TypeScript (App Router).
@@ -31,7 +31,7 @@ category: wild-animals        # wild-animals | domestic-animals | animals-and-hu
 excerpt: "One or two sentences shown on cards."
 coverImage: /images/hero-lion.jpg
 date: 2026-11-14
-author: "Greenest Hub"
+author: "Greennest Hub"
 ---
 ```
 
