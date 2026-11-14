@@ -6,7 +6,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <div className="wrap footer-inner">
         <div>
-          <p className="footer-logo">🌿 Greenest Hub</p>
+          <p className="footer-logo">🌿 Greennest Hub</p>
           <p className="footer-tag">Where every animal has a story.</p>
         </div>
         <nav className="footer-nav" aria-label="Footer">
@@ -18,7 +18,7 @@ export default function SiteFooter() {
           ))}
         </nav>
       </div>
-      <p className="footer-copy">© 2026 Greenest Hub — made with love for animals and curious kids.</p>
+      <p className="footer-copy">© 2026 Greennest Hub — made with love for animals and curious kids.</p>
     </footer>
   );
 }
