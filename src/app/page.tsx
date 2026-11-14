@@ -7,6 +7,7 @@ import PostCard from "@/components/PostCard";
 export default function Home() {
   const posts = getAllPosts();
   const latest = posts.slice(0, 6);
+  
   return (
     <>
       <section className="hero">
@@ -31,6 +32,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
       <section className="section wrap" aria-labelledby="explore-heading">
         <div className="section-head">
           <h2 id="explore-heading">Explore the animal world 🌍</h2>
@@ -44,8 +46,7 @@ export default function Home() {
               </Link>
               <div className="category-card-body">
                 <h3>
-                  {c.emoji}
-                  {c.name}
+                  {c.emoji} {c.name}
                 </h3>
                 <p>{c.tagline}</p>
                 <Link href={`/category/${c.slug}`} className="category-card-link">
@@ -56,6 +57,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      
       <section className="section wrap" id="latest" aria-labelledby="latest-heading">
         <div className="section-head">
           <h2 id="latest-heading">Latest stories 📖</h2>
@@ -65,8 +67,8 @@ export default function Home() {
           <p className="empty-state">No stories yet — check back soon!</p>
         ) : (
           <div className="post-grid">
-            {latest.map((p) => (
-              <PostCard key={p.slug} post={p} />
+            {latest.map((post) => (
+              <PostCard key={post.slug} post={post} />
             ))}
           </div>
         )}
