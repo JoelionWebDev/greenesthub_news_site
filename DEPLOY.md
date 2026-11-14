@@ -1,4 +1,4 @@
-# Deploying Greenest Hub to Vercel
+# Deploying Greennest Hub to Vercel
 
 ## 1. Push the repo to GitHub
 
@@ -26,15 +26,15 @@ import flow also works once the code is on GitHub.
 
 ## 4. Connect the domain
 
-In Vercel → Project → Settings → Domains, add `greenesthub.com.ng`
-(and `www.greenesthub.com.ng` if wanted) and follow the DNS instructions
+In Vercel → Project → Settings → Domains, add `greennesthub.com.ng`
+(and `www.greennesthub.com.ng` if wanted) and follow the DNS instructions
 at your domain registrar. The site's metadata already points at
-`https://greenesthub.com.ng`.
+`https://greennesthub.com.ng`.
 
 ## 5. Check it works
 
-- Open https://greenesthub.com.ng — the home page with the lion hero.
-- Open https://greenesthub.com.ng/admin — the login page. Log in with
+- Open https://greennesthub.com.ng — the home page with the lion hero.
+- Open https://greennesthub.com.ng/admin — the login page. Log in with
   username `admin` and the `ADMIN_PASSWORD` you set.
 - Publish a test story from the editor. It commits
   `content/posts/<slug>.md` to GitHub; Vercel redeploys automatically and
