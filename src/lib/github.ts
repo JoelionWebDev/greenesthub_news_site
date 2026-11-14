@@ -1,9 +1,10 @@
 import 'server-only';
 
+
 const OWNER = 'JoelionWebDev';
 const REPO = 'greenesthub_news_site';
 const BRANCH = 'main';
-const SITE_URL = 'https://greenesthub.com.ng';
+const SITE_URL = 'https://greennesthub.com.ng';
 
 export type PublishResult =
   | { ok: true; slug: string; url: string }
@@ -13,7 +14,7 @@ function githubHeaders(token: string): Record<string, string> {
   return {
     Authorization: `Bearer ${token}`,
     Accept: 'application/vnd.github+json',
-    'User-Agent': 'greenesthub-admin',
+    'User-Agent': 'greennesthub-admin',
     'X-GitHub-Api-Version': '2022-11-28',
   };
 }
@@ -41,15 +42,12 @@ export async function commitPostToGitHub(
         'GITHUB_TOKEN is not set on the server. Add it in Vercel → Project → Settings → Environment Variables, then redeploy.',
     };
   }
-
   const headers = githubHeaders(token);
   let slug = baseSlug;
-
   for (let attempt = 0; attempt < 10; attempt++) {
     const trySlug = attempt === 0 ? baseSlug : `${baseSlug}-${attempt + 1}`;
     const path = `content/posts/${trySlug}.md`;
     const url = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${encodeURIComponent(path)}`;
-
     const check = await fetch(`${url}?ref=${BRANCH}`, { headers });
     if (check.status === 404) {
       // Free slug — create the file.
@@ -81,6 +79,5 @@ export async function commitPostToGitHub(
     }
     // File exists — try the next suffix.
   }
-
   return { ok: false, error: 'Could not find a free file name for this post. Try a different title.' };
 }
