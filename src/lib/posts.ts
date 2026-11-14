@@ -41,7 +41,7 @@ function readPostFile(fileName: string): PostMeta | null {
     excerpt: typeof data.excerpt === 'string' ? data.excerpt : '',
     coverImage: typeof data.coverImage === 'string' ? data.coverImage : '/images/hero-lion.jpg',
     date: typeof data.date === 'string' ? data.date : '2026-11-14',
-    author: typeof data.author === 'string' ? data.author : 'Greenest Hub',
+    author: typeof data.author === 'string' ? data.author : 'Greennest Hub',
     fileSlug,
   };
 }
