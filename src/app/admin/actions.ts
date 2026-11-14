@@ -26,7 +26,6 @@ export async function loginAction(
   const username = String(formData.get("username") ?? "").trim();
   const password = String(formData.get("password") ?? "");
   const expected = getAdminPassword();
-
   if (!expected) {
     return {
       ok: false,
@@ -68,24 +67,27 @@ export async function publishAction(
   formData: FormData,
 ): Promise<ActionState> {
   if (!(await isLoggedIn())) {
-    return { ok: false, error: "You are not logged in. Please log in again." };
+    return { ok: false, error: "You are not logged in. Please log in and try again." };
   }
-
   const title = String(formData.get("title") ?? "").trim();
   const category = String(formData.get("category") ?? "").trim();
   const excerpt = String(formData.get("excerpt") ?? "").trim();
-  const coverImage = String(formData.get("coverImage") ?? "").trim() || "/images/hero-lion.jpg";
-  const body = String(formData.get("body") ?? "").trim();
-
-  if (!title || !body) {
-    return { ok: false, error: "Title and story body are required." };
+  const coverImage = String(formData.get("coverImage") ?? "").trim();
+  const date = String(formData.get("date") ?? "").trim();
+  const body = String(formData.get("body") ?? "");
+  if (!title || !category || !excerpt || !coverImage || !date || !body.trim()) {
+    return { ok: false, error: "Please fill in every field before publishing." };
   }
   if (!CATEGORIES.some((c) => c.slug === category)) {
     return { ok: false, error: "Please choose a valid category." };
   }
-
-  const date = new Date().toISOString().slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    return { ok: false, error: "Date must be in YYYY-MM-DD format." };
+  }
   const baseSlug = slugify(title);
+  if (!baseSlug) {
+    return { ok: false, error: "The title must contain at least one letter or number." };
+  }
   const markdown = [
     "---",
     `title: "${escapeYaml(title)}"`,
@@ -94,16 +96,12 @@ export async function publishAction(
     `excerpt: "${escapeYaml(excerpt)}"`,
     `coverImage: ${coverImage}`,
     `date: ${date}`,
-    'author: "Greenest Hub"',
+    `author: "Greennest Hub"`,
     "---",
-    "",
     body,
     "",
   ].join("\n");
-
   const result = await commitPostToGitHub(baseSlug, markdown, title);
-  if (!result.ok) {
-    return { ok: false, error: result.error };
-  }
-  return { ok: true, slug: result.slug, url: result.url };
+  if (!result.ok) return { ok: false, error: result.error };
+  return { ok: true, url: result.url, slug: result.slug };
 }
