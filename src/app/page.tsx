@@ -1,69 +1,78 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+import { CATEGORIES } from "@/lib/categories";
+import { getAllPosts } from "@/lib/posts";
+import PostCard from "@/components/PostCard";
 
 export default function Home() {
+  const posts = getAllPosts();
+  const latest = posts.slice(0, 6);
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
+    <>
+      <section className="hero">
         <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/images/hero-lion.jpg"
+          alt="A majestic lion standing on a green savanna hill at sunrise"
+          width={1920}
+          height={1280}
           priority
+          className="hero-image"
         />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="hero-overlay">
+          <div className="wrap hero-text">
+            <h1>Greenest Hub — where every animal has a story</h1>
+            <p>
+              Roar with lions, trumpet with elephants, purr with cats and buzz with bees.
+              Fun, true animal stories for curious kids and animal lovers.
+            </p>
+            <Link href="#latest" className="hero-cta">
+              Start exploring 🦁
+            </Link>
+          </div>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section wrap" aria-labelledby="explore-heading">
+        <div className="section-head">
+          <h2 id="explore-heading">Explore the animal world 🌍</h2>
+          <p>Pick a path and meet the animals that live there.</p>
         </div>
-      </main>
-    </div>
+        <div className="category-grid">
+          {CATEGORIES.map((c) => (
+            <article key={c.slug} className="category-card">
+              <Link href={`/category/${c.slug}`}>
+                <Image src={c.image} alt={c.name} width={800} height={500} />
+              </Link>
+              <div className="category-card-body">
+                <h3>
+                  {c.emoji} {c.name}
+                </h3>
+                <p>{c.tagline}</p>
+                <Link href={`/category/${c.slug}`} className="category-card-link">
+                  Meet the animals →
+                </Link>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section wrap" id="latest" aria-labelledby="latest-heading">
+        <div className="section-head">
+          <h2 id="latest-heading">Latest stories 📖</h2>
+          <p>Fresh from the jungle, the farm and the garden.</p>
+        </div>
+        {latest.length === 0 ? (
+          <p className="empty-state">No stories yet — check back soon!</p>
+        ) : (
+          <div className="post-grid">
+            {latest.map((post) => (
+              <PostCard key={post.slug} post={post} />
+            ))}
+          </div>
+        )}
+      </section>
+    </>
   );
 }
