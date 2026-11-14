@@ -7,7 +7,6 @@ import PostCard from "@/components/PostCard";
 export default function Home() {
   const posts = getAllPosts();
   const latest = posts.slice(0, 6);
-
   return (
     <>
       <section className="hero">
@@ -21,7 +20,7 @@ export default function Home() {
         />
         <div className="hero-overlay">
           <div className="wrap hero-text">
-            <h1>Greenest Hub — where every animal has a story</h1>
+            <h1>Greennest Hub — where every animal has a story</h1>
             <p>
               Roar with lions, trumpet with elephants, purr with cats and buzz with bees.
               Fun, true animal stories for curious kids and animal lovers.
@@ -32,7 +31,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="section wrap" aria-labelledby="explore-heading">
         <div className="section-head">
           <h2 id="explore-heading">Explore the animal world 🌍</h2>
@@ -46,7 +44,8 @@ export default function Home() {
               </Link>
               <div className="category-card-body">
                 <h3>
-                  {c.emoji} {c.name}
+                  {c.emoji}
+                  {c.name}
                 </h3>
                 <p>{c.tagline}</p>
                 <Link href={`/category/${c.slug}`} className="category-card-link">
@@ -57,7 +56,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       <section className="section wrap" id="latest" aria-labelledby="latest-heading">
         <div className="section-head">
           <h2 id="latest-heading">Latest stories 📖</h2>
@@ -67,8 +65,8 @@ export default function Home() {
           <p className="empty-state">No stories yet — check back soon!</p>
         ) : (
           <div className="post-grid">
-            {latest.map((post) => (
-              <PostCard key={post.slug} post={post} />
+            {latest.map((p) => (
+              <PostCard key={p.slug} post={p} />
             ))}
           </div>
         )}
