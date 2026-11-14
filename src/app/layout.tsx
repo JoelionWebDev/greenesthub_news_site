@@ -14,28 +14,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://greenesthub.com.ng";
+const SITE_URL = "https://greennesthub.com.ng";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Greenest Hub — Wild & Domestic Animal Stories for Kids",
-    template: "%s | Greenest Hub",
+    default: "Greennest Hub — Wild & Domestic Animal Stories for Kids",
+    template: "%s | Greennest Hub",
   },
   description:
-    "Greenest Hub is a fun animal blog for children and animal lovers — wild animals, domestic animals, and the wonderful ways animals and humans help each other.",
+    "Greennest Hub is a fun animal blog for children and animal lovers — wild animals, domestic animals, and the wonderful ways animals and humans help each other.",
   openGraph: {
     type: "website",
-    siteName: "Greenest Hub",
+    siteName: "Greennest Hub",
     url: SITE_URL,
-    title: "Greenest Hub — Where Every Animal Has a Story",
+    title: "Greennest Hub — Where Every Animal Has a Story",
     description:
       "Wild animals, domestic animals, and animals & humans — fun, true animal stories for curious kids.",
     images: [{ url: "/images/hero-lion.jpg", width: 1920, height: 1280, alt: "A lion on a green savanna at sunrise" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Greenest Hub — Where Every Animal Has a Story",
+    title: "Greennest Hub — Where Every Animal Has a Story",
     description:
       "Wild animals, domestic animals, and animals & humans — fun, true animal stories for curious kids.",
     images: ["/images/hero-lion.jpg"],
