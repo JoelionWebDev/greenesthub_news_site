@@ -37,6 +37,7 @@ export default async function CategoryPage({
   const category = getCategory(slug);
   if (!category) notFound();
   const posts = getPostsByCategory(slug);
+  
   return (
     <div className="wrap">
       <header className="page-head">
