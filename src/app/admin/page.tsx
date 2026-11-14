@@ -20,6 +20,7 @@ export const metadata = {
  */
 async function AdminContent() {
   const loggedIn = await isLoggedIn();
+  
   if (!loggedIn) {
     return (
       <>
@@ -30,7 +31,8 @@ async function AdminContent() {
         <LoginForm />
       </>
     );
-  }
+      }
+  
   const posts = getAllPosts();
   return (
     <>
