@@ -1387,12 +1387,12 @@ main {
   z-index: 70;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.4rem;
   background: #fff;
   color: var(--green-900);
   border-radius: 999px;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  padding: 0.28rem 0.6rem 0.28rem 0.28rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
   cursor: grab;
   touch-action: none;
   user-select: none;
@@ -1411,8 +1411,8 @@ main {
 
 .float-contact-icon {
   flex: none;
-  width: 38px;
-  height: 38px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: #25d366;
   color: #fff;
@@ -1422,24 +1422,24 @@ main {
 }
 
 .float-contact-icon svg {
-  width: 22px;
-  height: 22px;
+  width: 13px;
+  height: 13px;
 }
 
 .float-contact-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .float-contact-text strong {
-  font-size: 0.92rem;
+  font-size: 0.68rem;
   font-weight: 800;
   white-space: nowrap;
 }
 
 .float-contact-text small {
-  font-size: 0.68rem;
+  font-size: 0.55rem;
   color: var(--muted, #5a6b5e);
   white-space: nowrap;
 }
