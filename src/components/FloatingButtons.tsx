@@ -35,8 +35,8 @@ export default function FloatingButtons() {
         const parsed = JSON.parse(saved) as Pos;
         if (typeof parsed.x === 'number' && typeof parsed.y === 'number') {
           setPos({
-            x: Math.min(Math.max(0, parsed.x), window.innerWidth - 200),
-            y: Math.min(Math.max(0, parsed.y), window.innerHeight - 60),
+            x: Math.min(Math.max(0, parsed.x), window.innerWidth - 170),
+            y: Math.min(Math.max(0, parsed.y), window.innerHeight - 40),
           });
         }
       }
