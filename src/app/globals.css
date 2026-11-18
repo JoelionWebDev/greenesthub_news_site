@@ -1379,31 +1379,69 @@ main {
   }
 }
 
-/* ---------- Floating buttons: WhatsApp + back to top ---------- */
-.float-whatsapp {
+/* ---------- Floating buttons: contact pill + back to top ---------- */
+.float-contact {
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 56px;
-  height: 56px;
+  z-index: 70;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  color: var(--green-900);
+  border-radius: 999px;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  text-decoration: none;
+  max-width: calc(100vw - 40px);
+}
+
+.float-contact.dragging {
+  cursor: grabbing;
+}
+
+.float-contact:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.38);
+}
+
+.float-contact-icon {
+  flex: none;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: #25d366;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  z-index: 70;
 }
 
-.float-whatsapp svg {
-  width: 32px;
-  height: 32px;
+.float-contact-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
-.float-whatsapp:hover {
-  background: #1eb856;
-  color: #fff;
+.float-contact-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.float-contact-text strong {
+  font-size: 0.92rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.float-contact-text small {
+  font-size: 0.68rem;
+  color: var(--muted, #5a6b5e);
+  white-space: nowrap;
 }
 
 .float-top {

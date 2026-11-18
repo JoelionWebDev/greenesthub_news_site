@@ -207,9 +207,9 @@ export default function Home() {
             <h2 id="founder-heading">Why Greennest Hub exists 🌱</h2>
             <p>
               Greennest Hub was founded by <strong>Igono Joel</strong>. He studied Agricultural
-              Economics and Extension at university, then became a tech expert — and now he is
-              using both skills to help local farmers in villages and cities across Nigeria and
-              Africa.
+              Economics and Extension at Kogi State University, then became a tech expert — and
+              now he is using both skills, together with some of his friends in the agricultural
+              field, to help rural and urban farmers across Nigeria and Africa.
             </p>
             <p>
               This platform brings farming innovation, practical knowledge and awareness to the
