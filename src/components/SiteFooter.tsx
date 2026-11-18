@@ -23,6 +23,17 @@ export default function SiteFooter() {
             Farming knowledge, tools and market prices for Nigeria and Africa.
           </p>
           <p className="footer-tag">Founded by Igono Joel — Built by Joetech360.</p>
+          <p className="footer-tag">
+            Chat with the developer on{' '}
+            <a
+              href="https://wa.me/2348167099131?text=Hello%20Joel%2C%20I%20have%20a%20question%20about%20Greennest%20Hub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              WhatsApp — +234 816 709 9131
+            </a>
+            .
+          </p>
         </div>
         <nav className="footer-nav" aria-label="Footer">
           {FOOTER_LINKS.map((l) => (
