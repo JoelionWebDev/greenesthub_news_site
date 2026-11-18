@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/weather',
     '/community',
     '/community/ask',
+    '/blog',
   ];
   return [
     {

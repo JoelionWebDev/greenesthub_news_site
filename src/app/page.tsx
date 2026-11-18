@@ -104,6 +104,11 @@ export default function Home() {
             ))}
           </div>
         )}
+        <p className="section-more">
+          <Link className="btn btn-primary" href="/blog">
+            See all {posts.length} blogs →
+          </Link>
+        </p>
       </section>
 
       <section className="section wrap" aria-labelledby="tools-heading">

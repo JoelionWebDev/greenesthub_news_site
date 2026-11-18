@@ -1437,3 +1437,87 @@ main {
   color: #fff;
   text-decoration: underline;
 }
+
+/* ---------- All Blogs page: filters + pagination ---------- */
+.section-more {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.blog-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-chip {
+  display: inline-block;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: var(--card, #fff);
+  border: 1px solid var(--border, #d9e8dc);
+  color: var(--green-900);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.filter-chip:hover {
+  border-color: var(--green-900);
+}
+
+.filter-chip.active {
+  background: var(--green-900);
+  color: #fff;
+  border-color: var(--green-900);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.page-info {
+  font-weight: 600;
+  color: var(--muted, #5a6b5e);
+}
+
+/* ---------- Hero on mobile: text below the photo, nothing hidden ---------- */
+/* The overlay text is taller than the photo on a phone, so it used to get
+   cut off by the hero's fixed height. On small screens the photo becomes a
+   short strip and the text flows below it on a solid green panel. */
+@media (max-width: 720px) {
+  .hero-image {
+    height: 240px;
+  }
+
+  .hero-overlay {
+    position: static;
+    background: var(--green-900);
+    display: block;
+  }
+
+  .hero-text {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+    line-height: 1.15;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .hero-cta-row {
+    flex-direction: column;
+  }
+
+  .hero-cta-row .hero-cta {
+    text-align: center;
+  }
+}
