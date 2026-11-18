@@ -6,6 +6,21 @@ const SITE_URL = "https://greennesthub.com.ng";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
+  const staticPages = [
+    '/about',
+    '/contact',
+    '/privacy',
+    '/tools',
+    '/tools/fertilizer-calculator',
+    '/tools/planting-calendar',
+    '/tools/profit-calculator',
+    '/tools/feed-calculator',
+    '/tools/unit-converter',
+    '/tools/market-prices',
+    '/tools/weather',
+    '/community',
+    '/community/ask',
+  ];
   return [
     {
       url: SITE_URL,
@@ -13,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 1,
     },
+    ...staticPages.map((page) => ({
+      url: `${SITE_URL}${page}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    })),
     ...CATEGORIES.map((c) => ({
       url: `${SITE_URL}/category/${c.slug}`,
       lastModified: new Date(),

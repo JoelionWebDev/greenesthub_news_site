@@ -19,26 +19,26 @@ const SITE_URL = "https://greennesthub.com.ng";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Greennest Hub — Wild & Domestic Animal Stories for Kids",
+    default: "Greennest Hub — Farming Knowledge, Tools & Market Prices for Nigerian & African Farmers",
     template: "%s | Greennest Hub",
   },
   description:
-    "Greennest Hub is a fun animal blog for children and animal lovers — wild animals, domestic animals, and the wonderful ways animals and humans help each other.",
+    "Greennest Hub is Nigeria and Africa's agricultural platform — learn modern farming, use free farmer tools, check market prices and weather, ask farmers' questions, and read stories about crops and animals. Founded by Igono Joel.",
   openGraph: {
     type: "website",
     siteName: "Greennest Hub",
     url: SITE_URL,
-    title: "Greennest Hub — Where Every Animal Has a Story",
+    title: "Greennest Hub — Farming Knowledge, Tools & Market Prices for Nigerian & African Farmers",
     description:
-      "Wild animals, domestic animals, and animals & humans — fun, true animal stories for curious kids.",
-    images: [{ url: "/images/hero-lion.jpg", width: 1920, height: 1280, alt: "A lion on a green savanna at sunrise" }],
+      "Learn modern farming, use free farmer tools, check market prices and weather, and ask questions — for village and city farmers and agriculture students.",
+    images: [{ url: "/images/hero-farm.jpg", width: 1920, height: 1280, alt: "A Nigerian farmer standing in a maize field at sunrise" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Greennest Hub — Where Every Animal Has a Story",
+    title: "Greennest Hub — Farming Knowledge, Tools & Market Prices for Nigerian & African Farmers",
     description:
-      "Wild animals, domestic animals, and animals & humans — fun, true animal stories for curious kids.",
-    images: ["/images/hero-lion.jpg"],
+      "Learn modern farming, use free farmer tools, check market prices and weather, and ask questions — for village and city farmers and agriculture students.",
+    images: ["/images/hero-farm.jpg"],
   },
   robots: { index: true, follow: true },
 };
