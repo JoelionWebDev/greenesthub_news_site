@@ -15,8 +15,8 @@ export default function AboutPage() {
         <div className="article-body">
           <p>
             Greennest Hub is an agricultural platform for Nigeria and Africa — bringing farming
-            innovation, practical knowledge and awareness to local farmers in villages and
-            cities, and a learning home for agriculture students.
+            innovation, practical knowledge and awareness to rural and urban farmers, and a
+            learning home for agriculture students.
           </p>
           <h2>What you will find here</h2>
           <ul>
@@ -54,8 +54,9 @@ export default function AboutPage() {
           <p>
             Greennest Hub was founded by <strong>Igono Joel</strong>, in Lagos, Nigeria. He
             studied <strong>Agricultural Economics and Extension</strong> at Kogi State
-            University, then became a tech expert — and now he is using both skills to assist
-            the local farmers who feed us.
+            University, then became a tech expert — and now he is using both skills, together
+            with some of his friends in the agricultural field, to assist rural and urban
+            farmers who feed us.
           </p>
           <p>
             <em>Built by Joetech360.</em>
