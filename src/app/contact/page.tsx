@@ -22,6 +22,21 @@ export default function ContactPage() {
             <strong>info@joetech360.ng</strong>
           </p>
           <p>(That is the email for the team behind Greennest Hub.)</p>
+          <h2>Chat with the developer on WhatsApp</h2>
+          <p>
+            The fastest way to reach the developer, Igono Joel, is on WhatsApp —{' '}
+            <strong>+234 816 709 9131</strong>.
+          </p>
+          <p>
+            <Link
+              className="btn btn-primary"
+              href="https://wa.me/2348167099131?text=Hello%20Joel%2C%20I%20have%20a%20question%20about%20Greennest%20Hub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chat on WhatsApp →
+            </Link>
+          </p>
           <h2>Have a farming question?</h2>
           <p>
             If you have a question about your crops, animals or farm business — or a strange
