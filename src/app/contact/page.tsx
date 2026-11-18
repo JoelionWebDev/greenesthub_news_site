@@ -25,7 +25,7 @@ export default function ContactPage() {
           <h2>Chat with the developer on WhatsApp</h2>
           <p>
             The fastest way to reach the developer, Igono Joel, is on WhatsApp —{' '}
-            <strong>+234 816 709 9131</strong>.
+            <strong>08167099131</strong>.
           </p>
           <p>
             <Link
