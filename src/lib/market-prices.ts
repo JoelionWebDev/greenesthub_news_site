@@ -4,6 +4,9 @@
  *
  * RULES (read before editing):
  * - Every price comes from a published survey or report. Never invent one.
+ * - PRICES VERIFIED 18 November 2026: every row below was checked line
+ *   by line against its cited source. Any price that cannot be re-confirmed
+ *   against a published source must be REMOVED, not carried forward.
  * - A region only appears when a fresh survey covers it. If a survey is
  *   older than ~6 weeks, it stays only if nothing newer exists — and its
  *   date must show.
@@ -43,8 +46,8 @@ export const COMMODITY_PRICES: CommodityPrices[] = [
       {
         region: 'Lagos (South-West)',
         market: 'Mile 12, Daleko, Mushin, Oyingbo',
-        price: '₦48,000 – ₦65,000',
-        unit: 'per 50kg bag (local)',
+        price: '₦48,000',
+        unit: 'per 50kg bag (Royal Stallion short-grain)',
         date: 'Oct 2026',
         source: 'Nairametrics market survey',
       },
@@ -87,6 +90,14 @@ export const COMMODITY_PRICES: CommodityPrices[] = [
         unit: 'per 50kg bag',
         date: 'Oct 2026',
         source: 'BusinessDay market survey',
+      },
+      {
+        region: 'Borno (North-East)',
+        market: 'Borno markets',
+        price: '₦1,429',
+        unit: 'per kg (imported)',
+        date: '15 Oct 2026',
+        source: 'WFP, via Nigeria Food Prices Tracker',
       },
     ],
   },
@@ -206,7 +217,7 @@ export const COMMODITY_PRICES: CommodityPrices[] = [
         price: '₦2,500 – ₦4,000',
         unit: 'per tuber (medium)',
         date: 'Oct 2026',
-        source: 'Nairametrics / BusinessDay market surveys',
+        source: 'BusinessDay market survey',
       },
       {
         region: 'Borno (North-East)',
@@ -225,10 +236,10 @@ export const COMMODITY_PRICES: CommodityPrices[] = [
       {
         region: 'Lagos (South-West)',
         market: 'Mile 12, Daleko, Mushin, Oyingbo',
-        price: '₦50,000',
-        unit: 'per big basket',
+        price: '₦35,000 – ₦70,000',
+        unit: 'per big basket (round – oval)',
         date: 'Oct 2026',
-        source: 'BusinessDay market survey',
+        source: 'Nairametrics market survey',
       },
       {
         region: 'Lagos (South-West)',
@@ -245,6 +256,14 @@ export const COMMODITY_PRICES: CommodityPrices[] = [
         unit: 'per kg',
         date: 'May 2026',
         source: 'NBS Selected Food Prices Watch',
+      },
+      {
+        region: 'Borno (North-East)',
+        market: 'Borno markets',
+        price: '₦1,100',
+        unit: 'per kg',
+        date: '15 Oct 2026',
+        source: 'WFP, via Nigeria Food Prices Tracker',
       },
     ],
   },
@@ -336,6 +355,15 @@ export const AFRICA_PRICES: AfricaPrice[] = [
     unit: 'per 90kg sack',
     date: 'Nov 2026',
     source: 'Kenya farmer reports',
+  },
+  {
+    country: 'Kenya',
+    city: 'Nairobi',
+    commodity: 'Tomatoes',
+    price: 'KSh 146',
+    unit: 'per kg',
+    date: 'Nov 2026',
+    source: 'Numbeo',
   },
   {
     country: 'Ghana',
