@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 /** Floating "Contact the developer" pill, shown on every page.
- *  Tap it to chat with the developer (Igono Joel) on WhatsApp.
+ *  Tap it to chat with the developer on WhatsApp.
  *  Drag it anywhere on the screen — the spot is remembered. */
 const WHATSAPP_URL =
   'https://wa.me/2348167099131?text=Hello%20Joel%2C%20I%20have%20a%20question%20about%20Greennest%20Hub';
@@ -35,8 +35,8 @@ export default function FloatingButtons() {
         const parsed = JSON.parse(saved) as Pos;
         if (typeof parsed.x === 'number' && typeof parsed.y === 'number') {
           setPos({
-            x: Math.min(Math.max(0, parsed.x), window.innerWidth - 170),
-            y: Math.min(Math.max(0, parsed.y), window.innerHeight - 40),
+            x: Math.min(Math.max(0, parsed.x), window.innerWidth - 130),
+            y: Math.min(Math.max(0, parsed.y), window.innerHeight - 30),
           });
         }
       }
@@ -76,8 +76,8 @@ export default function FloatingButtons() {
     if (!drag.moved) return;
     setDragging(true);
     const el = pillRef.current;
-    const w = el ? el.offsetWidth : 220;
-    const h = el ? el.offsetHeight : 56;
+    const w = el ? el.offsetWidth : 130;
+    const h = el ? el.offsetHeight : 24;
     const next = {
       x: Math.min(Math.max(0, drag.baseX + dx), window.innerWidth - w),
       y: Math.min(Math.max(0, drag.baseY + dy), window.innerHeight - h),
@@ -141,7 +141,6 @@ export default function FloatingButtons() {
         </span>
         <span className="float-contact-text">
           <strong>Contact the developer</strong>
-          <small>Chat with Igono Joel on WhatsApp</small>
         </span>
       </a>
 
