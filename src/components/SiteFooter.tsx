@@ -30,7 +30,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              WhatsApp — +234 816 709 9131
+              WhatsApp — 08167099131
             </a>
             .
           </p>
