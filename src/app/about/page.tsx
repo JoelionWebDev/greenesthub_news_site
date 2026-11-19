@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Greennest Hub is Nigeria and Africa's agricultural platform — farming knowledge, free tools, market prices and a farmers' community. Founded by Igono Joel, B.Sc. Agricultural Economics & Extension.",
+    "Greennest Hub is an agricultural platform for Nigeria and Africa — farming knowledge, free tools and market prices. Founded by Igono Joel.",
   alternates: { canonical: `${SITE_URL}/about` },
 };
 
