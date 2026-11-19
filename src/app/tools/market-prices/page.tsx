@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import PriceExplorer from '@/components/PriceExplorer';
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: 'Market Prices — Same Food, Different Price in Every Region',
   description:
     'Current market prices for rice, maize, garri, beans, yam and tomatoes across Nigerian regions — Lagos, Enugu, Port Harcourt, Abuja, Kano, Borno and more — plus prices from Kenya and Ghana. Updated weekly from food-price news and surveys.',
+  alternates: { canonical: `${SITE_URL}/tools/market-prices` },
 };
 
 export default function MarketPricesPage() {
