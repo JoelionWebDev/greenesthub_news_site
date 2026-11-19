@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllPosts, getPost, getRelatedPosts } from "@/lib/posts";
 import { getCategoryName } from "@/lib/categories";
+import { SITE_URL } from "@/lib/site";
 import PostCard from "@/components/PostCard";
 
 export async function generateStaticParams() {
@@ -18,11 +19,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = await getPost(slug);
   if (!post) return {};
+  const url = `${SITE_URL}/posts/${slug}`;
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
     openGraph: {
       type: "article",
+      url,
       title: post.title,
       description: post.excerpt,
       images: [{ url: post.coverImage, width: 1920, height: 1280, alt: post.title }],
