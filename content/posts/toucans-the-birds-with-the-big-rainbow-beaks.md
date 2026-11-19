@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Toucans: The Birds With the Big Rainbow Beaks
 
 Imagine a bird with a beak so big and so colourful that it looks like it was painted by an artist. The beak is bright red, orange, yellow, green, or blue, and it is almost as long as the bird's whole body. This is a toucan, one of the most eye-catching birds in the world. Toucans live in the rainforests of Central and South America, where they hop from branch to branch, munching fruit and showing off their amazing beaks.
 

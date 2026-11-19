@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Quokkas: The Happiest Animals on Earth
 
 If you could meet the happiest animal on Earth, who would it be? Many people would say the quokka. Quokkas are small, furry animals from Australia that always seem to be smiling. Their mouths turn up at the corners, and when they look at a camera, it looks as if they are posing for a happy selfie. It is no wonder that people call them the happiest animals on Earth.
 

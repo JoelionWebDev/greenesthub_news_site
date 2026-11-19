@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Pet Photographers: The People Who Take Pictures of Pets
 
 Have you ever seen a photo of a dog wearing a birthday hat, or a cat peeking out of a cardboard box, and thought, "That is the cutest picture ever"? Behind those wonderful photos there is a special kind of photographer: a pet photographer.
 

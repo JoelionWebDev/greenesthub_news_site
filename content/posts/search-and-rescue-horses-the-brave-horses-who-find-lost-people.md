@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Search-and-Rescue Horses: The Brave Horses Who Find Lost People
 
 Imagine you are lost in a huge forest. The trees go on and on in every direction. Night is coming, and you do not know which way to go. Then, in the distance, you hear the sound of hooves. A horse and rider appear through the trees. They have been searching for you, and now you are found. That is the job of search-and-rescue horses, and it is one of the bravest jobs any animal can do.
 

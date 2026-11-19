@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Puffins: The Colourful Clowns of the Sea
 
 If you ever see a puffin, you might think it is wearing a clown costume. It has a big, bright beak in shades of red, orange, and yellow, a white face, a black cap on its head, and orange feet. It waddles along on its short legs like a little sailor in a hurry. But do not be fooled by its funny looks: the puffin is also a champion swimmer and a brilliant flyer.
 

@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Pangolins: The Scaly Anteaters of the Forest
 
 Imagine an animal that looks like a pine cone, a lizard, and an armadillo all rolled into one. It has no fur on its back, but it is covered in hard scales. It has a long, sticky tongue, strong claws, and a tail that can curl around a tree branch. When it feels scared, it rolls up into a tight ball, like a football. This amazing animal is the pangolin.
 

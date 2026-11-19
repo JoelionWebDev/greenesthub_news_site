@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Shetland Ponies: The Small Strong Horses of Scotland
 
 Imagine a horse so small that you could almost look it in the eye, yet so strong that it can pull a load far heavier than itself. That is a Shetland pony, one of the toughest little horses in the whole world. These ponies come from the Shetland Islands, a group of windy islands far to the north of Scotland, where the weather can be cold, wet, and wild. Living in such a hard place made Shetland ponies small, strong, and very brave.
 

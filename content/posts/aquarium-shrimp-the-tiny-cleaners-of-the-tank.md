@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Aquarium Shrimp: The Tiny Cleaners of the Tank
 
 If you look closely at a fish tank, you might spot something tiny, colourful and very busy. It has long, waving feelers, lots of little legs, and it is always nibbling away at something. That is an aquarium shrimp! These tiny creatures are the cleaners of the fish world, and they are one of the most fun and helpful pets you can keep in a tank.
 

@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Cockatoos: The Crested Clowns of the Home
 
 Have you ever seen a bird that can dance, laugh, wave and show off a fancy feather crown whenever it gets excited? That is a cockatoo! Cockatoos are playful parrots with a tall crest of feathers on their heads that pops up like a crown. They are known as the clowns of the parrot world because they love to make people laugh with their silly tricks.
 

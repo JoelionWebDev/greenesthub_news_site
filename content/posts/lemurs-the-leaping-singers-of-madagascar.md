@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Lemurs: The Leaping Singers of Madagascar
 
 Far away in the Indian Ocean, there is a big island called Madagascar. It is home to animals that live nowhere else on Earth, and the most famous of them all is the lemur. Lemurs are primates, which means they are related to monkeys, apes, and us. They have big, round eyes, soft fur, and long tails, and they can leap through the trees like furry acrobats. Some lemurs even sing loud songs in the morning that can be heard right across the forest.
 

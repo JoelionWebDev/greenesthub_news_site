@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Platypuses: The Egg-Laying Swimmers of Australia
 
 Imagine an animal with a duck's bill, a beaver's tail, webbed feet like an otter, and soft fur like a mole. It lays eggs, but it is a mammal. It swims underwater, but it has no gills. It sounds like a made-up creature from a storybook, but it is real. It is the platypus, one of the strangest and most wonderful animals in the world.
 

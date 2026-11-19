@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Macaws: The Colourful Parrots of the Home
 
 Imagine a bird the size of a cat, dressed in feathers of bright red, royal blue and sunny yellow, who can say "hello" when you walk into the room. That is a macaw! Macaws are some of the biggest and most colourful parrots in the world, and they make amazing pets for families who are ready for a very special feathered friend.
 

@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Narwhals: The Unicorns of the Arctic Sea
 
 Long ago, people told stories about unicorns: magical white horses with a single, spiral horn on their forehead. Most people thought unicorns were only in fairy tales. But deep in the icy waters of the far north, there really is an animal with a long, spiral tusk. It is called a narwhal, and it is often called the unicorn of the sea.
 

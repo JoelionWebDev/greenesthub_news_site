@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Therapy Horses: The Gentle Horses Who Help People Feel Better
 
 Horses are big, strong animals. They can run fast, jump high, and carry people on their backs. But some horses have a very special job that has nothing to do with racing or jumping. They are therapy horses, and their job is to help people feel better.
 

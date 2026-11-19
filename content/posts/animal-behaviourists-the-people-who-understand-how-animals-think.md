@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Animal Behaviourists: The People Who Understand How Animals Think
 
 Why does a dog wag its tail? Why does a cat purr? Why does a parrot copy the words it hears? Animals are always doing interesting things, but they cannot tell us why in words. That is where animal behaviourists come in. An animal behaviourist is a scientist who studies how animals behave: what they do, how they feel, and what they are thinking.
 

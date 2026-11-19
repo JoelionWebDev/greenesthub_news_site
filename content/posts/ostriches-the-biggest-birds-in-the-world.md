@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Ostriches: The Biggest Birds in the World
 
 Imagine a bird so big that it is taller than most grown-ups. A bird with long, strong legs, a long neck, and huge eyes. A bird that cannot fly at all, but can run faster than a horse. That bird is the ostrich, the biggest bird in the whole world.
 

@@ -8,7 +8,6 @@ date: 2026-11-19
 author: "Greennest Hub"
 ---
 
-# Miniature Horses: The Tiny Horses With Big Hearts
 
 Have you ever seen a horse that is no taller than a big dog? That is a miniature horse, a real horse that has been bred to stay small. Miniature horses are not baby horses and they are not ponies. They are fully grown horses, just tiny. Most of them stand about as tall as a kitchen table, and they weigh about as much as a big dog. Yet they have the same gentle heart, long mane, and graceful walk as a full-size horse.
 

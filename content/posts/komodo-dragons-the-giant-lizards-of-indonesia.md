@@ -8,7 +8,6 @@ date: 2026-11-18
 author: "Greennest Hub"
 ---
 
-# Komodo Dragons: The Giant Lizards of Indonesia
 
 Long ago, people told stories about dragons: huge, scaly creatures with sharp teeth and a fearsome bite. Most people thought dragons were only in stories. But on a few small islands in Indonesia, there really are giant lizards that look like dragons. They are called Komodo dragons, and they are the biggest lizards in the world.
 
