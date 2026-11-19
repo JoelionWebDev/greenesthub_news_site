@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Planting Calendar",
   description:
-    "When to plant each crop in Nigeria, North and South — maize, cassava, yam, rice and more, month by month.",
+    "When to plant each crop in Nigeria, North and South — maize, cassava, yam, rice and more, month by month. Plan your farming year with confidence.",
   alternates: { canonical: `${SITE_URL}/tools/planting-calendar` },
 };
 
