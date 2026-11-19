@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Unit Converter",
   description:
-    "Convert farm units — hectares, acres, plots, bags and kilos — for Nigerian farmers, free and instant.",
+    "Convert farm units — hectares, acres, plots, bags and kilos — for Nigerian farmers, free and instant. No account needed.",
   alternates: { canonical: `${SITE_URL}/tools/unit-converter` },
 };
 
