@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Feed Calculator",
   description:
-    "How much feed your birds and goats need each day — layers, broilers and goats, in grams and bags.",
+    "How much feed your birds and goats need each day — layers, broilers and goats, in grams and bags. Free, no account needed.",
   alternates: { canonical: `${SITE_URL}/tools/feed-calculator` },
 };
 
