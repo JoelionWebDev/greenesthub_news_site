@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Farmer Tools — Free Calculators & Checkers",
   description:
     "Free farmer tools from Greennest Hub — fertilizer calculator, planting calendar, profit calculator, feed calculator, market prices, weather and unit converter. No account needed.",
+  alternates: { canonical: `${SITE_URL}/tools` },
 };
 
 const TOOLS = [
