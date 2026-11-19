@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Greennest Hub — send a story idea, suggest a farming topic, or report a mistake.",
+    "Contact Greennest Hub — send a story idea, suggest a farming topic, or report a mistake. We reply to farmers' messages and fix errors fast.",
   alternates: { canonical: `${SITE_URL}/contact` },
 };
 
