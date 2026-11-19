@@ -2,7 +2,7 @@
 title: "Cats: The Independent Little Hunters"
 slug: cats-the-independent-little-hunters
 category: domestic-animals
-excerpt: "Cats are soft, clever and full of surprises — they can see in the dark, land on their feet and purr when they are happy. Come and meet the world's favourite little hunter!"
+excerpt: "Cats are soft, clever and full of surprises — they can see in the dark, land on their feet and purr when they are happy."
 coverImage: /images/cat.jpg
 date: 2026-11-14
 author: "Greennest Hub"

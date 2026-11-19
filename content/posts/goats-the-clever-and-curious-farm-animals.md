@@ -2,7 +2,7 @@
 title: "Goats: The Clever and Curious Farm Animals"
 slug: goats-the-clever-and-curious-farm-animals
 category: domestic-animals
-excerpt: "Goats are clever, curious and full of fun — they can climb, jump, and even open gates! Come and meet these playful farm animals and find out why farmers love them."
+excerpt: "Goats are clever, curious and full of fun — they can climb, jump, and even open gates! Goats are some of the cleverest animals on the farm."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

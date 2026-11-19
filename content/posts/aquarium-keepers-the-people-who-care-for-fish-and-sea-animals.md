@@ -1,5 +1,5 @@
 ---
-title: "Aquarium Keepers: The People Who Care for Fish and Sea Animals"
+title: "Aquarium Keepers: Caring for Fish and Sea Animals"
 slug: aquarium-keepers-the-people-who-care-for-fish-and-sea-animals
 category: animals-and-humans
 excerpt: "Aquarium keepers look after thousands of fish, sharks, turtles and more. Peek behind the scenes of an aquarium and see how they do it."

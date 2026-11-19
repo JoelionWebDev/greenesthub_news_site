@@ -2,7 +2,7 @@
 title: "Falcons and Falconers: A Friendship as Old as Kings"
 slug: falcons-and-falconers-a-friendship-as-old-as-kings
 category: animals-and-humans
-excerpt: "For thousands of years, people and falcons have hunted together. Discover the ancient art of falconry!"
+excerpt: "For thousands of years, people and falcons have hunted together. Discover the ancient art of falconry! What Is Falconry?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-15
 author: "Greennest Hub"

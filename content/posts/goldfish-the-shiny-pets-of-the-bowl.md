@@ -2,7 +2,7 @@
 title: "Goldfish: The Shiny Pets of the Bowl"
 slug: goldfish-the-shiny-pets-of-the-bowl
 category: domestic-animals
-excerpt: "Goldfish are one of the oldest pets in the world — and they can remember things and even recognise their owners!"
+excerpt: "Goldfish are one of the oldest pets in the world — and they can remember things and even recognise their owners! Goldfish are now found all over the world."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

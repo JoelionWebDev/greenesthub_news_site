@@ -2,7 +2,7 @@
 title: "African Wild Dogs: The Painted Wolves of the Savanna"
 slug: african-wild-dogs-the-painted-wolves-of-the-savanna
 category: wild-animals
-excerpt: "African wild dogs are colourful, clever hunters that work together as a team. Meet the painted wolves of the savanna."
+excerpt: "African wild dogs are colourful, clever hunters that work together as a team. Meet the painted wolves of the savanna. It is a bit like a human fingerprint."
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

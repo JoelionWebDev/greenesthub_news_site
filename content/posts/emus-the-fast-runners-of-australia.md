@@ -2,7 +2,7 @@
 title: "Emus: The Fast Runners of Australia"
 slug: emus-the-fast-runners-of-australia
 category: wild-animals
-excerpt: "Emus are big, speedy birds from Australia that cannot fly but can run like the wind. Discover how these shaggy-feathered runners live, eat, and raise their chicks."
+excerpt: "Emus are big, speedy birds from Australia that cannot fly but can run like the wind. Emus have lived in Australia for a very long time."
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

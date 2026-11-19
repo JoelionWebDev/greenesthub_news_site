@@ -2,7 +2,7 @@
 title: "Guinea Pigs: The Squeaky Little Friends"
 slug: guinea-pigs-the-squeaky-little-friends
 category: domestic-animals
-excerpt: "Guinea pigs squeak, purr and popcorn with joy — meet the chatty little pets that love a cuddle and a carrot!"
+excerpt: "Guinea pigs squeak, purr and popcorn with joy — meet the chatty little pets that love a cuddle and a carrot! What Is a Guinea Pig?"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

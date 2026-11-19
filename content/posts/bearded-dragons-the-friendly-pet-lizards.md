@@ -2,7 +2,7 @@
 title: "Bearded Dragons: The Friendly Pet Lizards"
 slug: bearded-dragons-the-friendly-pet-lizards
 category: domestic-animals
-excerpt: "Bearded dragons are calm, friendly lizards that love to bask in the sun. Meet a pet that waves hello!"
+excerpt: "Bearded dragons are calm, friendly lizards that love to bask in the sun. Meet a pet that waves hello! Have you ever met a lizard that waves hello?"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-18
 author: "Greennest Hub"

@@ -2,7 +2,7 @@
 title: "Canaries: The Little Singers of the Home"
 slug: canaries-the-little-singers-of-the-home
 category: domestic-animals
-excerpt: "Canaries fill a home with beautiful song — and their story begins on tiny islands in the middle of the ocean!"
+excerpt: "Canaries fill a home with beautiful song — and their story begins on tiny islands in the middle of the ocean! Let us meet the little singers of the home!"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

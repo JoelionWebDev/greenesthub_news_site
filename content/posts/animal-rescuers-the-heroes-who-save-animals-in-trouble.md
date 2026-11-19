@@ -1,5 +1,5 @@
 ---
-title: "Animal Rescuers: The Heroes Who Save Animals in Trouble"
+title: "Animal Rescuers: Heroes Who Save Animals"
 slug: animal-rescuers-the-heroes-who-save-animals-in-trouble
 category: animals-and-humans
 excerpt: "Animal rescuers save injured, lost, and abandoned animals. Meet these kind heroes and learn how they give animals a second chance."

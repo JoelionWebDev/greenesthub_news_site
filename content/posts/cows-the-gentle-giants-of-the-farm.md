@@ -2,7 +2,7 @@
 title: "Cows: The Gentle Giants of the Farm"
 slug: cows-the-gentle-giants-of-the-farm
 category: domestic-animals
-excerpt: "Cows are big, gentle and calm — they give us fresh milk, graze peacefully in green fields, and look after their calves with love. Come and meet these gentle giants!"
+excerpt: "Cows are big, gentle and calm — they give us fresh milk, graze peacefully in green fields, and look after their calves with love."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

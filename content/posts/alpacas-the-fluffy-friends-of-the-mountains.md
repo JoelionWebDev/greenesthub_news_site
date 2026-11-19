@@ -2,7 +2,7 @@
 title: "Alpacas: The Fluffy Friends of the Mountains"
 slug: alpacas-the-fluffy-friends-of-the-mountains
 category: domestic-animals
-excerpt: "Meet the alpaca — a gentle, fluffy mountain animal with a smile, a soft coat, and a very funny hum."
+excerpt: "Meet the alpaca — a gentle, fluffy mountain animal with a smile, a soft coat, and a very funny hum. That is an alpaca! Let us meet them."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

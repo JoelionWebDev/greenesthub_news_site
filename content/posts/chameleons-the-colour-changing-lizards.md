@@ -2,7 +2,7 @@
 title: "Chameleons: The Colour-Changing Lizards"
 slug: chameleons-the-colour-changing-lizards
 category: wild-animals
-excerpt: "Chameleons are amazing lizards that can change colour, move their eyes in different directions, and catch insects with a super-long tongue. Come and meet them."
+excerpt: "Chameleons are amazing lizards that can change colour, move their eyes in different directions, and catch insects with a super-long tongue."
 coverImage: /images/category-wild.jpg
 date: 2026-11-17
 author: "Greennest Hub"

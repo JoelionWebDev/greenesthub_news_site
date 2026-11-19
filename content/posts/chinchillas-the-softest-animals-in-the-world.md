@@ -2,7 +2,7 @@
 title: "Chinchillas: The Softest Animals in the World"
 slug: chinchillas-the-softest-animals-in-the-world
 category: domestic-animals
-excerpt: "Meet the chinchilla — a tiny mountain animal with the softest fur on Earth, giant ears, and a love of dust baths."
+excerpt: "Meet the chinchilla — a tiny mountain animal with the softest fur on Earth, giant ears, and a love of dust baths. That is a chinchilla!"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

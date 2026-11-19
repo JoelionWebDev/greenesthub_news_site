@@ -2,7 +2,7 @@
 title: "Donkeys: The Hard-Working Helpers of the Farm"
 slug: donkeys-the-hard-working-helpers-of-the-farm
 category: domestic-animals
-excerpt: "Strong, gentle and always ready to help — come and meet the donkey, the farm's most loyal worker."
+excerpt: "Strong, gentle and always ready to help — come and meet the donkey, the farm's most loyal worker. What is a donkey? Where do donkeys live?"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

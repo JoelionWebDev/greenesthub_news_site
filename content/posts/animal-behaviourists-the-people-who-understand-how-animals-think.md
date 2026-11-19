@@ -1,8 +1,8 @@
 ---
-title: "Animal Behaviourists: The People Who Understand How Animals Think"
+title: "Animal Behaviourists: Understanding How Animals Think"
 slug: animal-behaviourists-the-people-who-understand-how-animals-think
 category: animals-and-humans
-excerpt: "Animal behaviourists study how animals think, feel and act. Discover how they solve pet problems, help zoo animals, and learn what animals are really saying."
+excerpt: "Animal behaviourists study how animals think, feel and act. Why does a dog wag its tail? Why does a cat purr? Why does a parrot copy the words it hears?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-19
 author: "Greennest Hub"

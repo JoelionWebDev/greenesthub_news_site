@@ -2,7 +2,7 @@
 title: "Golden Retrievers: The Friendliest Dogs of All"
 slug: golden-retrievers-the-friendliest-dogs-of-all
 category: domestic-animals
-excerpt: "Golden retrievers are gentle, loyal dogs that love people and play. Meet a best friend with a waggy tail!"
+excerpt: "Golden retrievers are gentle, loyal dogs that love people and play. Meet a best friend with a waggy tail! If you are happy, it will bounce around with joy."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-18
 author: "Greennest Hub"

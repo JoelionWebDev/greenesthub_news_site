@@ -2,7 +2,7 @@
 title: "Bees and Humans: The Tiny Workers Who Feed the World"
 slug: bees-and-humans-the-tiny-workers-who-feed-the-world
 category: animals-and-humans
-excerpt: "Bees are tiny, but they do a giant job: they help plants make the fruits and vegetables we eat. Meet the honeybee, its waggle dance, and the people who care for hives!"
+excerpt: "Bees are tiny, but they do a giant job: they help plants make the fruits and vegetables we eat. That animal is a bee! Let us meet the busy honeybee."
 coverImage: /images/bees.jpg
 date: 2026-11-14
 author: "Greennest Hub"

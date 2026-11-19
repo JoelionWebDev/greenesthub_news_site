@@ -2,7 +2,7 @@
 title: "Butterflies: The Flying Flowers of the Garden"
 slug: butterflies-the-flying-flowers-of-the-garden
 category: animals-and-humans
-excerpt: "Butterflies begin life as tiny caterpillars and grow into bright, gentle flyers that help flowers grow. Discover how these flying flowers share our gardens!"
+excerpt: "Butterflies begin life as tiny caterpillars and grow into bright, gentle flyers that help flowers grow. But butterflies are much more than pretty."
 coverImage: /images/category-humans.jpg
 date: 2026-11-14
 author: "Greennest Hub"

@@ -2,7 +2,7 @@
 title: "Gorillas: The Gentle Giants of the Forest"
 slug: gorillas-the-gentle-giants-of-the-forest
 category: wild-animals
-excerpt: "Gorillas are the biggest apes in the world — but they are shy, gentle vegetarians who love their families."
+excerpt: "Gorillas are the biggest apes in the world — but they are shy, gentle vegetarians who love their families. Let us meet these gentle giants."
 coverImage: /images/category-wild.jpg
 date: 2026-11-15
 author: "Greennest Hub"

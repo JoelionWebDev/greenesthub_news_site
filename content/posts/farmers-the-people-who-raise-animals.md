@@ -1,8 +1,8 @@
 ---
-title: "Farmers: The People Who Raise Animals and Feed the World"
+title: "Farmers: Raising Animals and Feeding the World"
 slug: farmers-the-people-who-raise-animals
 category: animals-and-humans
-excerpt: "Farmers raise cows, chickens, goats, and sheep, and grow the food that feeds us all. Meet the people who raise animals."
+excerpt: "Farmers raise cows, chickens, goats, and sheep, and grow the food that feeds us all. Meet the people who raise animals. Where did all that food come from?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-17
 author: "Greennest Hub"

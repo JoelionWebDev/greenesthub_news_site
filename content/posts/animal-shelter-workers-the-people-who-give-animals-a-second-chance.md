@@ -1,5 +1,5 @@
 ---
-title: "Animal Shelter Workers: The People Who Give Animals a Second Chance"
+title: "Animal Shelter Workers: A Second Chance for Animals"
 slug: animal-shelter-workers-the-people-who-give-animals-a-second-chance
 category: animals-and-humans
 excerpt: "Animal shelter workers care for lost and homeless animals and help them find new loving homes. Meet the people who give animals a second chance."

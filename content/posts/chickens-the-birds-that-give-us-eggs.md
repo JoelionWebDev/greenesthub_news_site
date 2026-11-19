@@ -2,7 +2,7 @@
 title: "Chickens: The Birds That Give Us Eggs"
 slug: chickens-the-birds-that-give-us-eggs
 category: domestic-animals
-excerpt: "Chickens are busy, chatty farm birds — they scratch the ground for food, lay fresh eggs, and look after their fluffy little chicks. Come and meet these wonderful birds!"
+excerpt: "Chickens are busy, chatty farm birds — they scratch the ground for food, lay fresh eggs, and look after their fluffy little chicks."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

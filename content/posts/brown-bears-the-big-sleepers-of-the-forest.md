@@ -2,7 +2,7 @@
 title: "Brown Bears: The Big Sleepers of the Forest"
 slug: brown-bears-the-big-sleepers-of-the-forest
 category: wild-animals
-excerpt: "Brown bears can sleep for months without waking up! Come and meet the biggest sleepers in the forest."
+excerpt: "Brown bears can sleep for months without waking up! Come and meet the biggest sleepers in the forest. That animal is the brown bear."
 coverImage: /images/category-wild.jpg
 date: 2026-11-15
 author: "Greennest Hub"

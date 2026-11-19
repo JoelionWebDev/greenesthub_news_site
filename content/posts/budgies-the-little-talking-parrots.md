@@ -2,7 +2,7 @@
 title: "Budgies: The Little Talking Parrots"
 slug: budgies-the-little-talking-parrots
 category: domestic-animals
-excerpt: "Budgies are tiny parrots that can learn to say words! Meet the cheerful little birds that love to chat."
+excerpt: "Budgies are tiny parrots that can learn to say words! Meet the cheerful little birds that love to chat. That bird is the budgie — also called a budgerigar."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

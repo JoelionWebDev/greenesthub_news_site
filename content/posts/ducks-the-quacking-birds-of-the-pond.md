@@ -2,7 +2,7 @@
 title: "Ducks: The Quacking Birds of the Pond"
 slug: ducks-the-quacking-birds-of-the-pond
 category: domestic-animals
-excerpt: "Ducks waddle, swim and quack — come and meet the cheerful birds that turn every pond into a playground."
+excerpt: "Ducks waddle, swim and quack — come and meet the cheerful birds that turn every pond into a playground. What is a duck? A duck is a bird that loves water."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

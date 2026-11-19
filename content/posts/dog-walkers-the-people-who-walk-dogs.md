@@ -2,7 +2,7 @@
 title: "Dog Walkers: The People Who Walk Dogs"
 slug: dog-walkers-the-people-who-walk-dogs
 category: animals-and-humans
-excerpt: "Dog walkers take dogs out for walks and play so the dogs stay happy and healthy. Meet the people who walk dogs."
+excerpt: "Dog walkers take dogs out for walks and play so the dogs stay happy and healthy. Meet the people who walk dogs. Dogs love walks."
 coverImage: /images/category-humans.jpg
 date: 2026-11-17
 author: "Greennest Hub"

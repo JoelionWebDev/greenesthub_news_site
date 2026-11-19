@@ -2,7 +2,7 @@
 title: "Bison: The Giant Grazers of the Plains"
 slug: bison-the-giant-grazers-of-the-plains
 category: wild-animals
-excerpt: "Bison are huge, shaggy grass-eaters that once roamed the great plains in giant herds. Meet these gentle giants."
+excerpt: "Bison are huge, shaggy grass-eaters that once roamed the great plains in giant herds. Meet these gentle giants. What is a bison?"
 coverImage: /images/category-wild.jpg
 date: 2026-11-17
 author: "Greennest Hub"

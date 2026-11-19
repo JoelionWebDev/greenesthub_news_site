@@ -2,7 +2,7 @@
 title: "Badgers: The Diggers of the Night"
 slug: badgers-the-diggers-of-the-night
 category: wild-animals
-excerpt: "Badgers are striped night animals that dig amazing underground homes called setts. Meet the diggers of the night."
+excerpt: "Badgers are striped night animals that dig amazing underground homes called setts. Meet the diggers of the night. What is a badger?"
 coverImage: /images/category-wild.jpg
 date: 2026-11-17
 author: "Greennest Hub"

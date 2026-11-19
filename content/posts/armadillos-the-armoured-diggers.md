@@ -2,7 +2,7 @@
 title: "Armadillos: The Armoured Diggers"
 slug: armadillos-the-armoured-diggers
 category: wild-animals
-excerpt: "Armadillos wear a suit of armour made of bone. Learn how these digging animals use their claws and shells to stay safe."
+excerpt: "Armadillos wear a suit of armour made of bone. Learn how these digging animals use their claws and shells to stay safe. That is an armadillo!"
 coverImage: /images/category-wild.jpg
 date: 2026-11-16
 author: "Greennest Hub"

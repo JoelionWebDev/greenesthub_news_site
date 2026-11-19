@@ -2,7 +2,7 @@
 title: "Binturongs: The Bearcats of the Rainforest"
 slug: binturongs-the-bearcats-of-the-rainforest
 category: wild-animals
-excerpt: "Binturongs are shaggy tree-climbing animals that smell like popcorn! Meet the mysterious bearcats of the rainforest."
+excerpt: "Binturongs are shaggy tree-climbing animals that smell like popcorn! Meet the mysterious bearcats of the rainforest. What Is a Binturong?"
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"
