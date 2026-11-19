@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Profit Calculator",
   description:
-    "Will your harvest make money? Work out your farming profit before you plant — costs, yield and selling price.",
+    "Will your harvest make money? Work out your farming profit before you plant — costs, yield and selling price, all in naira.",
   alternates: { canonical: `${SITE_URL}/tools/profit-calculator` },
 };
 
