@@ -1,0 +1,54 @@
+# Greennest Hub
+
+> Greennest Hub (https://www.greennesthub.com.ng) is Nigeria and Africa's
+> agricultural platform — farming knowledge, free farmer tools, market
+> prices, weather, and a community where farmers ask questions and share
+> strange experiences from their farms. Founded by Igono Joel (B.Sc.
+> Agricultural Economics & Extension, Kogi State University).
+
+## What the site covers
+
+- Crops: practical guides for growing maize, cassava, yam, rice and other
+  Nigerian and African crops — planting, care, pests and diseases, harvest
+  and storage.
+- Livestock: raising poultry, goats, cattle, pigs and fish — feeding,
+  housing, health, breeding and income.
+- Farm Business & Sales: how to sell farm produce well — pricing, buyers,
+  markets, cooperatives, packaging and transport.
+- Student Research Hub: final-year project topics, research guides and data
+  for agriculture students.
+- Safe Crops: which crops and plants are safe and which can harm people or
+  animals, and how to handle them safely.
+- Learn Farming: step-by-step guides and modern methods — irrigation,
+  organic and climate-smart farming, soil care.
+- News & Innovation: agriculture news, new methods, technology and
+  government programmes for African farmers.
+- Animals: wild animals, domestic animals, and animals and humans working
+  together.
+
+## Free farmer tools
+
+- Fertilizer Calculator (/tools/fertilizer-calculator)
+- Planting Calendar (/tools/planting-calendar)
+- Profit Calculator (/tools/profit-calculator)
+- Feed Calculator (/tools/feed-calculator)
+- Market Prices (/tools/market-prices) — weekly food prices across Nigerian
+  regions plus Kenya and Ghana, from published surveys only, never guessed
+- Farm Weather (/tools/weather) — 5-day forecasts for Nigerian cities
+- Unit Converter (/tools/unit-converter)
+
+## Community
+
+- Farmers' questions & strange experiences (/community) — ask a question at
+  /community/ask; every question is reviewed before it appears.
+
+## All articles
+
+- Every article, newest first: /blog, with filters per
+  section (for example /blog?category=crops).
+
+## Contact
+
+- Email: info@joetech360.ng
+- WhatsApp (developer, Igono Joel): 08167099131
+- About: /about — Contact: /contact
