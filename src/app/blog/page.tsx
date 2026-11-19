@@ -2,14 +2,9 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { connection } from 'next/server';
 import { getAllPosts, getPostsByCategory } from '@/lib/posts';
-import { CATEGORIES, getCategoryName } from '@/lib/categories';
+import { CATEGORIES, getCategory, getCategoryName } from '@/lib/categories';
+import { SITE_URL } from '@/lib/site';
 import PostCard from '@/components/PostCard';
-
-export const metadata: Metadata = {
-  title: 'All Blogs — Greennest Hub',
-  description:
-    'Every article on Greennest Hub — farming, crops, livestock, animals and more, newest first.',
-};
 
 const PER_PAGE = 30;
 
@@ -19,6 +14,44 @@ function pageHref(category: string, page: number) {
   if (page > 1) params.set('page', String(page));
   const query = params.toString();
   return query ? `/blog?${query}` : '/blog';
+}
+
+// Every /blog view (all blogs, one category, one page of results) gets its
+// own title, description and self-canonical — the audits found 26 duplicate
+// titles/descriptions because every variant shared one static title.
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<{ category?: string; page?: string }>;
+}): Promise<Metadata> {
+  const params = await searchParams;
+  const category = getCategory(params.category ?? '');
+  const page = Math.max(1, parseInt(params.page ?? '1', 10) || 1);
+
+  // Titles omit the "— Greennest Hub" suffix: the layout title template
+  // already appends " | Greennest Hub".
+  let title = 'All Blogs';
+  let description =
+    'Every article on Greennest Hub — farming, crops, livestock, animals and more, newest first.';
+  if (category) {
+    title = page > 1 ? `${category.name} — Page ${page}` : category.name;
+    description =
+      page > 1
+        ? `Browse ${category.name} articles on Greennest Hub, page ${page} — newest first.`
+        : `Browse ${category.name} articles on Greennest Hub — newest first.`;
+  } else if (page > 1) {
+    title = `All Blogs — Page ${page}`;
+    description = `Every article on Greennest Hub, page ${page} — farming, crops, livestock, animals and more, newest first.`;
+  }
+
+  const href = pageHref(category?.slug ?? '', page);
+  const url = `${SITE_URL}${href}`;
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { url, title, description },
+  };
 }
 
 export default async function AllBlogsPage({
