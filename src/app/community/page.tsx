@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getPublishedQuestions } from '@/lib/questions';
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: 'Community — Farmers’ Questions & Strange Experiences',
   description:
     'Ask a farming question or share a strange experience from your farm. Farmers and the Greennest Hub team answer — for village and city farmers across Nigeria and Africa.',
+  alternates: { canonical: `${SITE_URL}/community` },
 };
 
 export default function CommunityPage() {
