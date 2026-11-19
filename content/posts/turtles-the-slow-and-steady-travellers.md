@@ -2,7 +2,7 @@
 title: "Turtles: The Slow and Steady Travellers"
 slug: turtles-the-slow-and-steady-travellers
 category: animals-and-humans
-excerpt: "Turtles carry their homes on their backs and travel slowly but surely across land and sea. Meet these gentle, patient animals and the people who protect them!"
+excerpt: "Turtles carry their homes on their backs and travel slowly but surely across land and sea. Turtles are some of the calmest animals you will ever meet."
 coverImage: /images/category-humans.jpg
 date: 2026-11-14
 author: "Greennest Hub"

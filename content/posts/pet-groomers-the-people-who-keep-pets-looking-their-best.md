@@ -1,5 +1,5 @@
 ---
-title: "Pet Groomers: The People Who Keep Pets Looking Their Best"
+title: "Pet Groomers: Keeping Pets Looking Their Best"
 slug: pet-groomers-the-people-who-keep-pets-looking-their-best
 category: animals-and-humans
 excerpt: "Pet groomers wash, brush and trim pets so they stay clean and healthy. Peek inside a grooming salon and see what a groomer's day looks like."

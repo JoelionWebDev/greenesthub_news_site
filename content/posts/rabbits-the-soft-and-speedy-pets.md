@@ -2,7 +2,7 @@
 title: "Rabbits: The Soft and Speedy Pets"
 slug: rabbits-the-soft-and-speedy-pets
 category: domestic-animals
-excerpt: "Rabbits are soft, speedy and full of surprises — they can jump high, wiggle their noses, and thump their back feet when they are excited. Come and meet these gentle little pets!"
+excerpt: "Rabbits are soft, speedy and full of surprises — they can jump high, wiggle their noses, and thump their back feet when they are excited."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

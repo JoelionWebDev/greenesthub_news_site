@@ -2,7 +2,7 @@
 title: "Shepherds: The People Who Care for Sheep"
 slug: shepherds-the-people-who-care-for-sheep
 category: animals-and-humans
-excerpt: "Shepherds look after flocks of sheep on hills and fields. Learn how they guide, feed and protect their woolly charges."
+excerpt: "Shepherds look after flocks of sheep on hills and fields. Learn how they guide, feed and protect their woolly charges. What Does a Shepherd Do?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-16
 author: "Greennest Hub"

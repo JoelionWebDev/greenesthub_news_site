@@ -2,7 +2,7 @@
 title: "Vets: The Doctors Who Heal Animals"
 slug: vets-the-doctors-who-heal-animals
 category: animals-and-humans
-excerpt: "Vets are animal doctors who check, treat, and care for sick and injured animals. Find out what a vet does every day."
+excerpt: "Vets are animal doctors who check, treat, and care for sick and injured animals. Find out what a vet does every day. A vet!"
 coverImage: /images/category-humans.jpg
 date: 2026-11-16
 author: "Greennest Hub"

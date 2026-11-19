@@ -2,7 +2,7 @@
 title: "Pet Sitters: The People Who Look After Your Pets"
 slug: pet-sitters-the-people-who-look-after-your-pets
 category: animals-and-humans
-excerpt: "A pet sitter is the friendly person who looks after your pets while you are away. Meet the people who feed, play with, and cuddle pets when their owners are on holiday."
+excerpt: "A pet sitter is the friendly person who looks after your pets while you are away. That is the job of a pet sitter. Who is a pet sitter?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-17
 author: "Greennest Hub"

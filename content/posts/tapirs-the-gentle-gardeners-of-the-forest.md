@@ -2,7 +2,7 @@
 title: "Tapirs: The Gentle Gardeners of the Forest"
 slug: tapirs-the-gentle-gardeners-of-the-forest
 category: wild-animals
-excerpt: "Tapirs are gentle, shy animals with a short trunk-like nose. Discover how they plant new trees just by eating fruit."
+excerpt: "Tapirs are gentle, shy animals with a short trunk-like nose. Discover how they plant new trees just by eating fruit. What is a tapir?"
 coverImage: /images/category-wild.jpg
 date: 2026-11-17
 author: "Greennest Hub"

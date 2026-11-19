@@ -2,7 +2,7 @@
 title: "Platypuses: The Egg-Laying Swimmers of Australia"
 slug: platypuses-the-egg-laying-swimmers-of-australia
 category: wild-animals
-excerpt: "The platypus looks like a mix of a duck, a beaver, and an otter, and it lays eggs even though it is a mammal. Dive in to discover one of the strangest and most wonderful animals on Earth."
+excerpt: "The platypus looks like a mix of a duck, a beaver, and an otter, and it lays eggs even though it is a mammal. It lays eggs, but it is a mammal."
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

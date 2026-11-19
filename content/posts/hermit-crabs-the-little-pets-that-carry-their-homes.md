@@ -2,7 +2,7 @@
 title: "Hermit Crabs: The Little Pets That Carry Their Homes"
 slug: hermit-crabs-the-little-pets-that-carry-their-homes
 category: domestic-animals
-excerpt: "Hermit crabs are tiny animals that live in empty sea shells and carry their homes on their backs. Meet these funny little pets and learn how to care for them."
+excerpt: "Hermit crabs are tiny animals that live in empty sea shells and carry their homes on their backs. That is what a hermit crab does every single day!"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-17
 author: "Greennest Hub"

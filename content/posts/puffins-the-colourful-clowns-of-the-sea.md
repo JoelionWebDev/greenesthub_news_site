@@ -2,7 +2,7 @@
 title: "Puffins: The Colourful Clowns of the Sea"
 slug: puffins-the-colourful-clowns-of-the-sea
 category: wild-animals
-excerpt: "Puffins are small seabirds with bright orange beaks, funny waddles, and amazing diving skills. Meet the colourful clowns of the sea and their cliff-top homes."
+excerpt: "Puffins are small seabirds with bright orange beaks, funny waddles, and amazing diving skills. Let us meet these colourful clowns of the sea."
 coverImage: /images/category-wild.jpg
 date: 2026-11-19
 author: "Greennest Hub"

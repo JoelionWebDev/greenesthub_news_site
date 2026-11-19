@@ -2,7 +2,7 @@
 title: "Koalas: The Sleepy Climbers of Australia"
 slug: koalas-the-sleepy-climbers-of-australia
 category: wild-animals
-excerpt: "Koalas sleep for most of the day and eat only one kind of leaf. Meet Australia's cuddliest tree-dweller!"
+excerpt: "Koalas sleep for most of the day and eat only one kind of leaf. Meet Australia's cuddliest tree-dweller! Let us climb up and meet them!"
 coverImage: /images/category-wild.jpg
 date: 2026-11-15
 author: "Greennest Hub"

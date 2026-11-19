@@ -2,7 +2,7 @@
 title: "Pigeons: The Messengers of the Past"
 slug: pigeons-the-messengers-of-the-past
 category: animals-and-humans
-excerpt: "Long before phones and emails, tiny rolled-up messages flew across the sky on the wings of pigeons. Discover how these clever birds carried news for kings, soldiers, and racers."
+excerpt: "Long before phones and emails, tiny rolled-up messages flew across the sky on the wings of pigeons. They are so common that many people barely notice them."
 coverImage: /images/category-humans.jpg
 date: 2026-11-14
 author: "Greennest Hub"

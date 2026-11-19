@@ -2,7 +2,7 @@
 title: "Mounted Police Officers and Their Horses"
 slug: mounted-police-officers-and-their-horses
 category: animals-and-humans
-excerpt: "Mounted police officers ride tall, brave horses to keep people safe. Meet the horses that patrol our streets."
+excerpt: "Mounted police officers ride tall, brave horses to keep people safe. Meet the horses that patrol our streets. It is a wonderful sight."
 coverImage: /images/category-humans.jpg
 date: 2026-11-18
 author: "Greennest Hub"

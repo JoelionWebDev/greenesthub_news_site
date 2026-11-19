@@ -2,7 +2,7 @@
 title: "Hamsters: The Tiny Pets with Big Cheeks"
 slug: hamsters-the-tiny-pets-with-big-cheeks
 category: domestic-animals
-excerpt: "Hamsters are tiny, fluffy and full of fun — they stuff food into their big cheeks, run on wheels, and sleep all day before waking up to play. Come and meet these little pets!"
+excerpt: "Hamsters are tiny, fluffy and full of fun — they stuff food into their big cheeks, run on wheels, and sleep all day before waking up to play."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

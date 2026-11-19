@@ -2,7 +2,7 @@
 title: "Mushers: The Sled-Dog Drivers of the North"
 slug: mushers-the-sled-dog-drivers-of-the-north
 category: animals-and-humans
-excerpt: "A musher is the person who drives a team of dogs pulling a sled across the snow. Meet the brave drivers of the cold, snowy North and the amazing dogs who run with them."
+excerpt: "A musher is the person who drives a team of dogs pulling a sled across the snow. Imagine standing on a wooden sled in the middle of a white, snowy world."
 coverImage: /images/category-humans.jpg
 date: 2026-11-17
 author: "Greennest Hub"

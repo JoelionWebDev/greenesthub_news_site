@@ -2,7 +2,7 @@
 title: "Ostriches: The Biggest Birds in the World"
 slug: ostriches-the-biggest-birds-in-the-world
 category: wild-animals
-excerpt: "Ostriches are the biggest birds on Earth, and even though they cannot fly, they can run faster than a horse. Come and meet these amazing giants of the African grasslands."
+excerpt: "Ostriches are the biggest birds on Earth, and even though they cannot fly, they can run faster than a horse. How Big Is an Ostrich?"
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

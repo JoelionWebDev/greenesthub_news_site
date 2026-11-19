@@ -1,5 +1,5 @@
 ---
-title: "Therapy Horses: The Gentle Horses Who Help People Feel Better"
+title: "Therapy Horses: Helping People Feel Better"
 slug: therapy-horses-the-gentle-horses-who-help-people-feel-better
 category: animals-and-humans
 excerpt: "Therapy horses are calm, gentle horses who help children and adults feel calmer, stronger and more confident. Meet the horses whose job is to heal hearts."

@@ -2,7 +2,7 @@
 title: "Sheep: The Fluffy Animals That Give Us Wool"
 slug: sheep-the-fluffy-animals-that-give-us-wool
 category: domestic-animals
-excerpt: "Soft, gentle and covered in clouds of wool — come and meet the sheep, the farm animals that keep us warm."
+excerpt: "Soft, gentle and covered in clouds of wool — come and meet the sheep, the farm animals that keep us warm. What is a sheep?"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

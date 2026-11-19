@@ -2,7 +2,7 @@
 title: "Leopards: The Spotted Climbers of the Trees"
 slug: leopards-the-spotted-climbers-of-the-trees
 category: wild-animals
-excerpt: "With golden coats covered in beautiful spots, leopards are amazing climbers who can carry their dinner up a tree. Come and meet one of nature's most graceful big cats!"
+excerpt: "With golden coats covered in beautiful spots, leopards are amazing climbers who can carry their dinner up a tree. That is a leopard!"
 coverImage: /images/category-wild.jpg
 date: 2026-11-15
 author: "Greennest Hub"

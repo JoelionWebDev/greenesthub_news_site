@@ -1,5 +1,5 @@
 ---
-title: "Pet Photographers: The People Who Take Pictures of Pets"
+title: "Pet Photographers: Taking Pictures of Pets"
 slug: pet-photographers-the-people-who-take-pictures-of-pets
 category: animals-and-humans
 excerpt: "Pet photographers take beautiful pictures of dogs, cats, horses and other animals. Find out how they get animals to pose, smile and look their best."

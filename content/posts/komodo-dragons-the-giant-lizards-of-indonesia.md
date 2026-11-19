@@ -2,7 +2,7 @@
 title: "Komodo Dragons: The Giant Lizards of Indonesia"
 slug: komodo-dragons-the-giant-lizards-of-indonesia
 category: wild-animals
-excerpt: "Komodo dragons are the biggest lizards in the world, with a powerful bite and an amazing sense of smell. Travel to the islands of Indonesia to meet these real-life dragons."
+excerpt: "Komodo dragons are the biggest lizards in the world, with a powerful bite and an amazing sense of smell. Most people thought dragons were only in stories."
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

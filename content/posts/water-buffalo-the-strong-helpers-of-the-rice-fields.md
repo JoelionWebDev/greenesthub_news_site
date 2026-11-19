@@ -2,7 +2,7 @@
 title: "Water Buffalo: The Strong Helpers of the Rice Fields"
 slug: water-buffalo-the-strong-helpers-of-the-rice-fields
 category: domestic-animals
-excerpt: "Water buffalo love muddy water and help farmers grow rice. Meet these strong, gentle helpers of the fields."
+excerpt: "Water buffalo love muddy water and help farmers grow rice. Meet these strong, gentle helpers of the fields. It is the water buffalo."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-16
 author: "Greennest Hub"

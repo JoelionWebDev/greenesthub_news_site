@@ -2,7 +2,7 @@
 title: "Pangolins: The Scaly Anteaters of the Forest"
 slug: pangolins-the-scaly-anteaters-of-the-forest
 category: wild-animals
-excerpt: "Pangolins are the only mammals covered in scales, and they love to eat ants and termites. Meet these shy, gentle animals and find out why they need our protection."
+excerpt: "Pangolins are the only mammals covered in scales, and they love to eat ants and termites. It has no fur on its back, but it is covered in hard scales."
 coverImage: /images/category-wild.jpg
 date: 2026-11-18
 author: "Greennest Hub"

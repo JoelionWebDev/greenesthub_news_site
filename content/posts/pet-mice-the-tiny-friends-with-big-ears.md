@@ -2,7 +2,7 @@
 title: "Pet Mice: The Tiny Friends with Big Ears"
 slug: pet-mice-the-tiny-friends-with-big-ears
 category: domestic-animals
-excerpt: "Meet the pet mouse — a tiny, whiskery friend with big round ears, a twitchy nose, and a brave little heart."
+excerpt: "Meet the pet mouse — a tiny, whiskery friend with big round ears, a twitchy nose, and a brave little heart. Hello, little friend!"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-15
 author: "Greennest Hub"

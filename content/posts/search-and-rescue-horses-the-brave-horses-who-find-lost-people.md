@@ -1,5 +1,5 @@
 ---
-title: "Search-and-Rescue Horses: The Brave Horses Who Find Lost People"
+title: "Search-and-Rescue Horses: Finding Lost People"
 slug: search-and-rescue-horses-the-brave-horses-who-find-lost-people
 category: animals-and-humans
 excerpt: "Search-and-rescue horses carry brave riders across mountains, forests and deserts to find lost people. Discover how these strong, clever horses save lives."

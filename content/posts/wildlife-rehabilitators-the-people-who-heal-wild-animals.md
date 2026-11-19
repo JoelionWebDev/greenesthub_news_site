@@ -1,5 +1,5 @@
 ---
-title: "Wildlife Rehabilitators: The People Who Heal Wild Animals"
+title: "Wildlife Rehabilitators: Healing Wild Animals"
 slug: wildlife-rehabilitators-the-people-who-heal-wild-animals
 category: animals-and-humans
 excerpt: "Wildlife rehabilitators nurse injured wild animals back to health so they can return to the wild. Meet the animal doctors of the forest."

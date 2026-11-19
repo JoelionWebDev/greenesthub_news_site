@@ -2,7 +2,7 @@
 title: "Whale Watchers: The People Who Watch Giant Whales"
 slug: whale-watchers-the-people-who-watch-giant-whales
 category: animals-and-humans
-excerpt: "Whale watchers sail out to sea to spot giant whales and learn how they live. Meet the people who watch giant whales."
+excerpt: "Whale watchers sail out to sea to spot giant whales and learn how they live. Meet the people who watch giant whales. What is a whale watcher?"
 coverImage: /images/category-humans.jpg
 date: 2026-11-17
 author: "Greennest Hub"

@@ -2,7 +2,7 @@
 title: "Pigs: The Clever Animals of the Farm"
 slug: pigs-the-clever-animals-of-the-farm
 category: domestic-animals
-excerpt: "Pigs are far cleverer than most people think — come and meet the smart, friendly animals of the farm."
+excerpt: "Pigs are far cleverer than most people think — come and meet the smart, friendly animals of the farm. What is a pig? Pigs come in many colours."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

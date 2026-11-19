@@ -2,7 +2,7 @@
 title: "Lemurs: The Leaping Singers of Madagascar"
 slug: lemurs-the-leaping-singers-of-madagascar
 category: wild-animals
-excerpt: "Lemurs live only on the island of Madagascar, where they leap through the trees and sing loud morning songs. Meet these big-eyed primates and their forest home."
+excerpt: "Lemurs live only on the island of Madagascar, where they leap through the trees and sing loud morning songs. Every morning, indri families sing together."
 coverImage: /images/category-wild.jpg
 date: 2026-11-19
 author: "Greennest Hub"

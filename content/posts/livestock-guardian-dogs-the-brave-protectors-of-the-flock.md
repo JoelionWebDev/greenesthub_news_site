@@ -1,8 +1,8 @@
 ---
-title: "Livestock Guardian Dogs: The Brave Protectors of the Flock"
+title: "Livestock Guardian Dogs: Protectors of the Flock"
 slug: livestock-guardian-dogs-the-brave-protectors-of-the-flock
 category: animals-and-humans
-excerpt: "These brave dogs live with sheep and goats day and night, protecting them from wolves, bears and big cats!"
+excerpt: "These brave dogs live with sheep and goats day and night, protecting them from wolves, bears and big cats! That is a livestock guardian dog."
 coverImage: /images/category-humans.jpg
 date: 2026-11-15
 author: "Greennest Hub"

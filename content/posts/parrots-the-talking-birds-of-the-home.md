@@ -2,7 +2,7 @@
 title: "Parrots: The Talking Birds of the Home"
 slug: parrots-the-talking-birds-of-the-home
 category: domestic-animals
-excerpt: "Bright feathers, clever minds and voices that copy our words — come and meet the parrot, the chatty bird of the home."
+excerpt: "Bright feathers, clever minds and voices that copy our words — come and meet the parrot, the chatty bird of the home. What is a parrot?"
 coverImage: /images/category-domestic.jpg
 date: 2026-11-14
 author: "Greennest Hub"

@@ -1,5 +1,5 @@
 ---
-title: "Wildlife Photographers: The People Who Capture Wild Moments"
+title: "Wildlife Photographers: Capturing Wild Moments"
 slug: wildlife-photographers-the-people-who-capture-wild-moments
 category: animals-and-humans
 excerpt: "Wildlife photographers wait patiently to take beautiful photos of animals in nature. Learn how they work without disturbing wild animals."
