@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import WeatherStrip from '@/components/WeatherStrip';
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: 'Farm Weather — 5-Day Forecast for Nigerian Cities',
   description:
     'Farm weather forecast for Lagos, Ibadan, Abuja, Kano, Enugu, Port Harcourt, Onitsha and Jos — temperature, rain chances and wind for the next 5 days.',
+  alternates: { canonical: `${SITE_URL}/tools/weather` },
 };
 
 export default function WeatherPage() {
