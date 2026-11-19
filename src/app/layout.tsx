@@ -14,11 +14,11 @@ const geistSans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Greennest Hub — Farming Knowledge, Tools & Market Prices for Nigerian & African Farmers",
+    default: "Greennest Hub — Farming Knowledge, Tools & Market Prices",
     template: "%s | Greennest Hub",
   },
   description:
-    "Greennest Hub is Nigeria and Africa's agricultural platform — learn modern farming, use free farmer tools, check market prices and weather, ask farmers' questions, and read stories about crops and animals. Founded by Igono Joel.",
+    "Greennest Hub brings farming knowledge, free farmer tools, market prices and weather to rural and urban farmers in Nigeria and Africa.",
   openGraph: {
     type: "website",
     siteName: "Greennest Hub",
