@@ -32,16 +32,16 @@ export async function generateMetadata({
   // already appends " | Greennest Hub".
   let title = 'All Blogs';
   let description =
-    'Every article on Greennest Hub — farming, crops, livestock, animals and more, newest first.';
+    'Every article on Greennest Hub — farming, crops, livestock, animals and more, newest first. Learn, use free farmer tools and check market prices.';
   if (category) {
     title = page > 1 ? `${category.name} — Page ${page}` : category.name;
     description =
       page > 1
-        ? `Browse ${category.name} articles on Greennest Hub, page ${page} — newest first.`
-        : `Browse ${category.name} articles on Greennest Hub — newest first.`;
+        ? `Browse ${category.name} articles on Greennest Hub, page ${page} — practical guides and farming knowledge for Nigerian and African farmers, newest first.`
+        : `Browse ${category.name} articles on Greennest Hub — practical guides and farming knowledge for Nigerian and African farmers, newest first.`;
   } else if (page > 1) {
     title = `All Blogs — Page ${page}`;
-    description = `Every article on Greennest Hub, page ${page} — farming, crops, livestock, animals and more, newest first.`;
+    description = `Every article on Greennest Hub, page ${page} — farming, crops, livestock, animals and more, newest first. Learn and use free farmer tools.`;
   }
 
   const href = pageHref(category?.slug ?? '', page);
@@ -50,7 +50,17 @@ export async function generateMetadata({
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { url, title, description },
+    // A partial openGraph here ships WITHOUT the layout's image/type
+    // (verified in the rendered HTML), so repeat them or these pages
+    // carry incomplete OG tags (Ahrefs flagged 166 pages for this).
+    openGraph: {
+      type: 'website',
+      siteName: 'Greennest Hub',
+      url,
+      title,
+      description,
+      images: [{ url: '/images/hero-farm.jpg', width: 1920, height: 1280, alt: 'Greennest Hub' }],
+    },
   };
 }
 
