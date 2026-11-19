@@ -4,13 +4,12 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import FloatingButtons from "@/components/FloatingButtons";
+import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
-
-const SITE_URL = "https://greennesthub.com.ng";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

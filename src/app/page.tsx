@@ -1,10 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { CATEGORIES } from "@/lib/categories";
 import { getAllPosts } from "@/lib/posts";
 import PostCard from "@/components/PostCard";
 import MarketStrip from "@/components/MarketStrip";
 import WeatherStrip from "@/components/WeatherStrip";
+import { SITE_URL } from "@/lib/site";
+
+// Canonical lives here (the homepage), not in the root layout: a canonical
+// set in the layout would be inherited by every page that does not override
+// it, wrongly pointing them all at the homepage.
+export const metadata: Metadata = {
+  alternates: { canonical: SITE_URL },
+};
 
 const TOOLS = [
   {
