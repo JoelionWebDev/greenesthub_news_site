@@ -26,6 +26,7 @@ export async function generateMetadata({
     alternates: { canonical: url },
     openGraph: {
       type: "article",
+      siteName: "Greennest Hub",
       url,
       title: post.title,
       description: post.excerpt,
