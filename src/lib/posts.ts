@@ -74,7 +74,11 @@ export async function getPost(slug: string): Promise<Post | null> {
   const filePath = fs.existsSync(fullPath) ? fullPath : altPath;
   const raw = fs.readFileSync(filePath, 'utf8');
   const { content } = matter(raw);
-  const processed = await remark().use(html).process(content);
+  // Post pages already render the title as the page <h1>. A leading "# "
+  // heading in the body would be a second H1, so drop it here — this also
+  // guards posts written through /admin, which may repeat the title.
+  const body = content.replace(/^\s*# [^\n]*\n?/, '');
+  const processed = await remark().use(html).process(body);
   return { ...meta, content, contentHtml: processed.toString() };
 }
 

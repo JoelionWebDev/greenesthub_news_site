@@ -1,9 +1,9 @@
 import 'server-only';
+import { SITE_URL } from './site';
 
 const OWNER = 'JoelionWebDev';
 const REPO = 'greenesthub_news_site';
 const BRANCH = 'main';
-const SITE_URL = 'https://greennesthub.com.ng';
 
 export type PublishResult =
   | { ok: true; slug: string; url: string }
