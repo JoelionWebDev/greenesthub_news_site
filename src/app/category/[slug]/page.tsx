@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CATEGORIES, getCategory } from "@/lib/categories";
 import { getPostsByCategory } from "@/lib/posts";
+import { SITE_URL } from "@/lib/site";
 import PostCard from "@/components/PostCard";
 
 export async function generateStaticParams() {
@@ -17,10 +18,13 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = getCategory(slug);
   if (!category) return {};
+  const url = `${SITE_URL}/category/${slug}`;
   return {
     title: `${category.name} Stories`,
     description: category.description,
+    alternates: { canonical: url },
     openGraph: {
+      url,
       title: `${category.name} | Greennest Hub`,
       description: category.description,
       images: [{ url: category.image, width: 1920, height: 1280, alt: category.name }],
