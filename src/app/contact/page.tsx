@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Greennest Hub",
+  title: "Contact",
   description:
     "Contact Greennest Hub — send a story idea, suggest a farming topic, or report a mistake.",
+  alternates: { canonical: `${SITE_URL}/contact` },
 };
 
 export default function ContactPage() {
