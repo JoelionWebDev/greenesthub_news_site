@@ -1,0 +1,34 @@
+-- Greennest Hub Marketplace — seed data (OPTIONAL)
+--
+-- HOW TO USE:
+--   1. Create a farmer account first (sign up at /marketplace/sell, or in
+--      the Supabase dashboard under Authentication -> Users).
+--   2. Copy that user's id (Authentication -> Users -> click the user) and
+--      replace 'PASTE-FARMER-USER-ID-HERE' below with it.
+--   3. Run this file in the Supabase SQL Editor.
+--   4. The seed listings then appear on /marketplace immediately.
+--
+-- The prices below match the site's verified market prices
+-- (src/lib/marketplace/../market-prices.ts, verified 18 November 2026).
+-- Do NOT seed invented prices: every price must come from a published
+-- survey or the verified ranges in that file.
+
+-- insert into public.produce_listings
+--   (owner_id, title, description, category, price_kobo, unit,
+--    quantity_available, state, city, farmer_name, whatsapp_number, image_url)
+-- values
+--   ('PASTE-FARMER-USER-ID-HERE',
+--    'Royal Stallion Rice — 50kg bag',
+--    'Clean short-grain rice, well dried and stone-free. Sold per 50kg bag.',
+--    'grains', 4800000, '50kg bag', 40,
+--    'Lagos', 'Mile 12', 'Sample farmer', '2348167099131',
+--    '/images/market-grains.jpg'),
+--   ('PASTE-FARMER-USER-ID-HERE',
+--    'Yam Tubers — medium',
+--    'Fresh yam tubers from Benue, good for pounded yam and porridge. Sold per tuber.',
+--    'tubers', 300000, 'tuber', 100,
+--    'Benue', 'Makurdi', 'Sample farmer', '2348167099131',
+--    '/images/market-yam-tomatoes.jpg');
+--
+-- Check the rows landed:
+--   select id, title, price_kobo, unit, state from public.produce_listings;
