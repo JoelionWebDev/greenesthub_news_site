@@ -17,6 +17,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/tools/unit-converter',
     '/tools/market-prices',
     '/tools/weather',
+    '/marketplace',
+    '/marketplace/sell',
     '/community',
     '/community/ask',
     '/blog',
