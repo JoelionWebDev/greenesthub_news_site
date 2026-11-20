@@ -2,7 +2,7 @@
 title: "Hearing Dogs: The Helpers Who Listen for You"
 slug: hearing-dogs-the-helpers-who-listen-for-you
 category: animals-and-humans
-excerpt: "A hearing dog is a super-helper with four legs and floppy ears. It listens for sounds its deaf owner cannot hear and then lets them know — doorbell, alarm clock, smoke alarm and more."
+excerpt: "When it hears a sound its owner needs to know about, it alerts them, usually by nudging them gently with its nose or paw."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

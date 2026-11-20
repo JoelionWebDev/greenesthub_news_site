@@ -2,7 +2,7 @@
 title: "Animal Actors: The Stars of the Screen"
 slug: animal-actors-the-stars-of-the-screen
 category: animals-and-humans
-excerpt: "From Lassie the collie to the dolphins of Flipper, animals have been film and TV stars for over a hundred years. Step behind the scenes and meet the trainers who teach them their tricks."
+excerpt: "On screen, it looks like magic. But behind every animal star there is a patient trainer, a lot of tasty treats, and many hours of practice."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

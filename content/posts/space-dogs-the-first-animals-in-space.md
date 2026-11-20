@@ -2,7 +2,7 @@
 title: "Space Dogs: The First Animals in Space"
 slug: space-dogs-the-first-animals-in-space
 category: animals-and-humans
-excerpt: "Before any human went to space, brave dogs went first. Meet Laika, Belka, Strelka and the other space dogs who helped people learn how to travel beyond Earth."
+excerpt: "In the 1950s, when rockets were still new and nobody knew if living things could survive in space, scientists sent dogs on daring journeys above the Earth."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

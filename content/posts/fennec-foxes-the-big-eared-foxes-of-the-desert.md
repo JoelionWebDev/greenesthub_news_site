@@ -2,7 +2,7 @@
 title: "Fennec Foxes: The Big-Eared Foxes of the Desert"
 slug: fennec-foxes-the-big-eared-foxes-of-the-desert
 category: wild-animals
-excerpt: "Fennec foxes have the biggest ears of any fox, and they use them to hear tiny animals moving under the sand. Meet these tiny desert foxes with the giant ears."
+excerpt: "This is a fennec fox, the smallest fox in the world, and it lives in one of the hottest, driest places on Earth: the Sahara Desert in North Africa."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

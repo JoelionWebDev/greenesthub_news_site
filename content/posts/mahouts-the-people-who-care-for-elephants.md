@@ -2,7 +2,7 @@
 title: "Mahouts: The People Who Care for Elephants"
 slug: mahouts-the-people-who-care-for-elephants
 category: animals-and-humans
-excerpt: "A mahout is an elephant's best friend, trainer and keeper all in one. Meet the people who spend their whole lives caring for the world's biggest land animals."
+excerpt: "Imagine having a best friend who weighs as much as a small truck, has a trunk that can pick up a single leaf, and remembers you for years and years."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

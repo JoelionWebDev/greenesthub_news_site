@@ -2,7 +2,7 @@
 title: "Beagles: The Happy Little Hounds"
 slug: beagles-the-happy-little-hounds
 category: domestic-animals
-excerpt: "Beagles are small, merry dogs with floppy ears, waggy tails and super-powered noses. Meet the happy little hounds that love to sniff, play and make friends."
+excerpt: "This is a Beagle, one of the happiest and friendliest dogs in the world. Beagles come from England, where they have lived for hundreds of years."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"

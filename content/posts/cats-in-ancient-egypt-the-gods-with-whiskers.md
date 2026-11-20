@@ -2,7 +2,7 @@
 title: "Cats in Ancient Egypt: The Gods With Whiskers"
 slug: cats-in-ancient-egypt-the-gods-with-whiskers
 category: animals-and-humans
-excerpt: "In ancient Egypt, cats were loved, protected and even worshipped as gods. Discover why the Egyptians thought cats were so special — and what happened to a cat's owner if the cat was harmed."
+excerpt: "Cats have lived alongside people for a very long time, but nowhere were they loved and honoured as much as in ancient Egypt."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

@@ -2,7 +2,7 @@
 title: "Kiwis: The Little Flightless Birds of New Zealand"
 slug: kiwis-the-little-flightless-birds-of-new-zealand
 category: wild-animals
-excerpt: "Kiwis are tiny, flightless birds from New Zealand with long beaks, whiskers, and a super sense of smell. Meet these little night birds and their giant eggs."
+excerpt: "This is a kiwi, one of the most unusual birds in the world, and it lives only in New Zealand. Kiwis are flightless birds, which means they cannot fly."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

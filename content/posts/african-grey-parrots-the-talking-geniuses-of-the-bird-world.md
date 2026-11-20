@@ -1,5 +1,5 @@
 ---
-title: "African Grey Parrots: The Talking Geniuses of the Bird World"
+title: "African Grey Parrots: The Talking Geniuses"
 slug: african-grey-parrots-the-talking-geniuses-of-the-bird-world
 category: domestic-animals
 excerpt: "African Grey Parrots can copy human words, understand what they mean and solve clever puzzles. Meet the talking geniuses of the bird world."

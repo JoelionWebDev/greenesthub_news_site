@@ -2,7 +2,7 @@
 title: "Kingfishers: The Bright Blue Fishing Birds"
 slug: kingfishers-the-bright-blue-fishing-birds
 category: wild-animals
-excerpt: "Kingfishers are small birds with dazzling blue and orange feathers that dive into rivers like tiny arrows to catch fish. Meet these bright blue fishing birds."
+excerpt: "This is a kingfisher, one of the most colourful fishing birds in the world. Kingfishers are small birds, but their colours are amazing."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

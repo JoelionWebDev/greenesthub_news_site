@@ -2,7 +2,7 @@
 title: "Border Collies: The Cleverest Dogs in the World"
 slug: border-collies-the-cleverest-dogs-in-the-world
 category: domestic-animals
-excerpt: "Border Collies are often called the cleverest dogs in the world. They can learn hundreds of words, herd sheep with a single stare, and solve puzzles like furry geniuses."
+excerpt: "This is a Border Collie, and many people believe it is the cleverest dog in the world. Let us meet these brilliant dogs."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"
