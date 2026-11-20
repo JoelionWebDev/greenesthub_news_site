@@ -2,7 +2,7 @@
 title: "Dwarf Hamsters: The Tiny Pets with Big Personalities"
 slug: dwarf-hamsters-the-tiny-pets-with-big-personalities
 category: domestic-animals
-excerpt: "Dwarf hamsters are tiny enough to fit in your hand, but they are full of energy and character. Meet the little pets that stuff their cheeks, run all night and love to explore."
+excerpt: "Campbell's and Winter Whites are a little bigger and calmer, so they are often better for children who want to hold their pet."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"

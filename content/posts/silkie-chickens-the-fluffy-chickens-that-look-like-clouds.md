@@ -1,8 +1,8 @@
 ---
-title: "Silkie Chickens: The Fluffy Chickens That Look Like Clouds"
+title: "Silkie Chickens: Fluffy Chickens That Look Like Clouds"
 slug: silkie-chickens-the-fluffy-chickens-that-look-like-clouds
 category: domestic-animals
-excerpt: "Silkie chickens have soft, silky feathers that feel like fur, black skin and fluffy feet. Meet the friendliest little chickens in the world — they look like walking clouds."
+excerpt: "They have fluffy feet, a puffy crest on their heads, and even black skin and bones, which surprises everyone who sees them for the first time."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"

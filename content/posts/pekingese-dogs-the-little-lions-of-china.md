@@ -2,7 +2,7 @@
 title: "Pekingese Dogs: The Little Lions of China"
 slug: pekingese-dogs-the-little-lions-of-china
 category: domestic-animals
-excerpt: "Pekingese dogs were once the pets of Chinese emperors and were treated like royalty. Meet the little lion dogs with long flowing coats and big, brave hearts."
+excerpt: "The Pekingese is a small dog with a very big history. Long ago, in China, these little dogs lived in the emperor's palace and were treated like royalty."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"

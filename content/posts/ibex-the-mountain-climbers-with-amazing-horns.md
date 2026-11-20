@@ -2,7 +2,7 @@
 title: "Ibex: The Mountain Climbers with Amazing Horns"
 slug: ibex-the-mountain-climbers-with-amazing-horns
 category: wild-animals
-excerpt: "Ibex live on steep rocky cliffs high in the mountains and can climb places that look impossible. Meet the sure-footed goats with the biggest, curviest horns."
+excerpt: "If you ever see a photo of an ibex standing on a cliff so steep it looks like a wall, you will wonder how it does not fall off."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

@@ -1,8 +1,8 @@
 ---
-title: "Ragdoll Cats: The Floppy Cats That Go Limp in Your Arms"
+title: "Ragdoll Cats: The Floppy Cats That Go Limp"
 slug: ragdoll-cats-the-floppy-cats-that-go-limp-in-your-arms
 category: domestic-animals
-excerpt: "Ragdoll cats are famous for going floppy like a rag doll when you pick them up. Meet the gentle, blue-eyed cats that follow their owners around like little shadows."
+excerpt: "Ragdolls are famous for relaxing totally when they are held, going limp like a rag doll — and that is how they got their name."
 coverImage: /images/category-domestic.jpg
 date: 2026-11-20
 author: "Greennest Hub"

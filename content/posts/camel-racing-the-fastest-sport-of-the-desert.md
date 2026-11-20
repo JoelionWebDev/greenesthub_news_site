@@ -2,7 +2,7 @@
 title: "Camel Racing: The Fastest Sport of the Desert"
 slug: camel-racing-the-fastest-sport-of-the-desert
 category: animals-and-humans
-excerpt: "Camel racing is a thrilling sport in the deserts of Arabia, where camels run faster than you would ever believe. Meet the camels, the jockeys and the people who train these desert champions."
+excerpt: "Camel racing is a thrilling sport that has been enjoyed for hundreds of years in countries like the United Arab Emirates, Saudi Arabia, Qatar and Oman."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

@@ -1,8 +1,8 @@
 ---
-title: "Honey Hunters: The Brave Climbers of the Wild Honey Cliffs"
+title: "Honey Hunters: Brave Climbers of the Honey Cliffs"
 slug: honey-hunters-the-brave-climbers-of-the-wild-honey-cliffs
 category: animals-and-humans
-excerpt: "In the mountains of Nepal, honey hunters climb tall cliffs on rope ladders to collect honey from the nests of giant bees. Meet the brave people who risk everything for golden honey."
+excerpt: "These bees do not live in hives in trees, like other bees. They build huge, open nests that hang from the sides of cliffs, high above the valleys."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

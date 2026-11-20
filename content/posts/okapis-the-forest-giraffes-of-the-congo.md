@@ -2,7 +2,7 @@
 title: "Okapis: The Forest Giraffes of the Congo"
 slug: okapis-the-forest-giraffes-of-the-congo
 category: wild-animals
-excerpt: "Okapis look like a mix of a giraffe, a zebra and a deer, but they are their own special animal. Meet the shy forest giraffes that hid from scientists for many years."
+excerpt: "It is called the okapi, and it lives deep in the rainforests of the Congo in central Africa. Even scientists were surprised when they finally saw one."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

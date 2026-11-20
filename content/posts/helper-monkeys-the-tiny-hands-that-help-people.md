@@ -2,7 +2,7 @@
 title: "Helper Monkeys: The Tiny Hands That Help People"
 slug: helper-monkeys-the-tiny-hands-that-help-people
 category: animals-and-humans
-excerpt: "Capuchin monkeys can be trained to help people who cannot use their arms, fetching things, switching on lights and opening doors. Meet the clever little helpers with hands like ours."
+excerpt: "Helper monkeys are trained to do all sorts of tasks for people who cannot use their arms, and they become loyal friends as well as helpers."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

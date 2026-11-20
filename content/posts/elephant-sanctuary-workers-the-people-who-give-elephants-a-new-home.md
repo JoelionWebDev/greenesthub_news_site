@@ -1,8 +1,8 @@
 ---
-title: "Elephant Sanctuary Workers: The People Who Give Elephants a New Home"
+title: "Elephant Sanctuary Workers: New Homes for Elephants"
 slug: elephant-sanctuary-workers-the-people-who-give-elephants-a-new-home
 category: animals-and-humans
-excerpt: "Elephant sanctuaries rescue elephants that were hurt or kept in bad places and give them forests, friends and freedom. Meet the kind people who look after these gentle giants."
+excerpt: "Elephant sanctuaries are special places where these elephants can live safely, with space to roam, friends to play with, and people who care for them."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

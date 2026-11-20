@@ -2,7 +2,7 @@
 title: "Secretary Birds: The Snake-Stomping Birds of Africa"
 slug: secretary-birds-the-snake-stomping-birds-of-africa
 category: wild-animals
-excerpt: "Secretary birds walk across the African grasslands on long legs and stomp on snakes with powerful kicks. Meet the elegant hunters that look like they are wearing quill pens behind their ears."
+excerpt: "The secretary bird gets its name from its looks. Long ago, office workers called secretaries used to tuck quill pens behind their ears."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

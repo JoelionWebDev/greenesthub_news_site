@@ -2,7 +2,7 @@
 title: "Gharials: The Long-Snouted Fishers of the River"
 slug: gharials-the-long-snouted-fishers-of-the-river
 category: wild-animals
-excerpt: "Gharials have the longest, thinnest snouts of any crocodile, perfect for catching fish. Meet the gentle giants of India's rivers, with a funny bulbous nose on the males."
+excerpt: "If you saw a gharial, you would probably stare. The gharial is also one of the rarest crocodiles in the world, and people are working hard to save it."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"

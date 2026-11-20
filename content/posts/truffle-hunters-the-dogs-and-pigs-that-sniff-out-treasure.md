@@ -1,8 +1,8 @@
 ---
-title: "Truffle Hunters: The Dogs and Pigs That Sniff Out Treasure"
+title: "Truffle Hunters: Dogs and Pigs That Sniff Out Treasure"
 slug: truffle-hunters-the-dogs-and-pigs-that-sniff-out-treasure
 category: animals-and-humans
-excerpt: "Truffles are rare, delicious mushrooms that grow hidden underground, and only an animal's nose can find them. Meet the clever dogs and pigs that hunt for this buried treasure."
+excerpt: "These clever animals can sniff out truffles buried deep in the earth, and they have been helping people find this treasure for hundreds of years."
 coverImage: /images/category-humans.jpg
 date: 2026-11-20
 author: "Greennest Hub"

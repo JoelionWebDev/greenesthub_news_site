@@ -2,7 +2,7 @@
 title: "Fossa: The Top Hunter of Madagascar"
 slug: fossa-the-top-hunter-of-madagascar
 category: wild-animals
-excerpt: "The fossa is the largest hunter on the island of Madagascar, a cat-like climber that chases lemurs through the trees. Meet the mysterious predator that looks like a mix of a cat, a dog and a mongoose."
+excerpt: "Lemurs, the famous leaping primates of the island, watch out for it day and night, because the fossa is the one animal they fear most."
 coverImage: /images/category-wild.jpg
 date: 2026-11-20
 author: "Greennest Hub"
