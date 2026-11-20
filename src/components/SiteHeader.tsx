@@ -98,6 +98,7 @@ export default function SiteHeader() {
           </div>
 
           <Link href="/tools">Tools</Link>
+          <Link href="/marketplace">Marketplace</Link>
           <Link href="/community">Community</Link>
           <Link href="/blog">All Blogs</Link>
           <Link href="/contact">Contact</Link>
@@ -126,6 +127,9 @@ export default function SiteHeader() {
           <p className="mobile-menu-heading">More</p>
           <Link href="/tools" onClick={() => setMenuOpen(false)}>
             🛠️ Farmer Tools
+          </Link>
+          <Link href="/marketplace" onClick={() => setMenuOpen(false)}>
+            🧺 Marketplace
           </Link>
           <Link href="/community" onClick={() => setMenuOpen(false)}>
             💬 Community

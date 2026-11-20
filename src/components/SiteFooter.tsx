@@ -7,6 +7,7 @@ const FOOTER_LINKS = [
   { href: '/category/farm-business', label: 'Farm Business' },
   { href: '/category/student-research', label: 'Student Hub' },
   { href: '/tools', label: 'Farmer Tools' },
+  { href: '/marketplace', label: 'Marketplace' },
   { href: '/community', label: 'Community' },
   { href: '/blog', label: 'All Blogs' },
   { href: '/about', label: 'About' },
