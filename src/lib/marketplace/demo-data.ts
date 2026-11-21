@@ -13,6 +13,13 @@ import type { ProduceListing } from "./types";
  *     (BusinessDay market survey, Oct 2026).
  *   - Tomatoes ₦50,000 per big basket — inside the verified
  *     ₦35,000–₦70,000 range (Nairametrics market survey, Oct 2026).
+ *   - Red palm oil ₦3,195 per litre — NBS Selected Food Prices Watch,
+ *     May 2026 national average of ₦2,396.62 per 75cl bottle, converted
+ *     to a litre (₦2,396.62 ÷ 0.75). May 2026 is the latest NBS release
+ *     available (checked Oct 2026).
+ *   - Groundnut oil ₦4,151 per litre — NBS Selected Food Prices Watch,
+ *     May 2026 national average of ₦3,113.05 per 75cl bottle, converted
+ *     to a litre (₦3,113.05 ÷ 0.75).
  * No price here was invented outside a verified figure or range.
  *
  * Demo "farmers" are SAMPLES, not real sellers: farmer_name is always
@@ -167,6 +174,42 @@ export const DEMO_LISTINGS: ProduceListing[] = [
     whatsapp_number: DEMO_WHATSAPP,
     image_url: "/images/market-yam-tomatoes.jpg",
     created_at: "2026-11-20T00:00:00Z",
+    is_demo: true,
+  },
+  {
+    id: "demo-palm-oil-abia",
+    owner_id: null,
+    title: "Red Palm Oil — 1 litre",
+    description:
+      "Pure red palm oil, well settled and clean. Sold per litre. Price based on the NBS Selected Food Prices Watch, May 2026 national average (75cl bottle ₦2,396.62).",
+    category: "processed",
+    price_kobo: 319500,
+    unit: "litre",
+    quantity_available: 25,
+    state: "Abia",
+    city: "Umuahia",
+    farmer_name: "Sample farmer",
+    whatsapp_number: DEMO_WHATSAPP,
+    image_url: "/images/market-palm-oil.jpg",
+    created_at: "2026-11-21T00:00:00Z",
+    is_demo: true,
+  },
+  {
+    id: "demo-groundnut-oil-kano",
+    owner_id: null,
+    title: "Groundnut Oil — 1 litre",
+    description:
+      "Pure groundnut oil, light and clean. Sold per litre. Price based on the NBS Selected Food Prices Watch, May 2026 national average (75cl bottle ₦3,113.05).",
+    category: "processed",
+    price_kobo: 415100,
+    unit: "litre",
+    quantity_available: 20,
+    state: "Kano",
+    city: "Kano",
+    farmer_name: "Sample farmer",
+    whatsapp_number: DEMO_WHATSAPP,
+    image_url: "/images/market-groundnut-oil.jpg",
+    created_at: "2026-11-21T00:00:00Z",
     is_demo: true,
   },
 ];
