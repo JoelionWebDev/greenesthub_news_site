@@ -1,9 +1,13 @@
-# Greennest Hub Marketplace — setup
+# Greennest Hub — Supabase setup (one project for everything)
 
-The marketplace lives inside the Greennest Hub site (`/marketplace`). It
-needs a Supabase project and Paystack keys before real farmers can list and
-real buyers can pay. Without them the site still builds and runs — the
-marketplace shows clearly-labelled **demo listings** instead.
+The site's server features all share **one Supabase project**: the
+marketplace (`/marketplace`), the visit statistics (`/stats`), and the
+Farmers Forum login (`/forum`, `/auth/*`, `/profile`). It needs a
+Supabase project before real farmers can sign up, list and post.
+Without one the site still builds and runs — the marketplace and the
+forum show clearly-labelled **demo content** instead, and the auth
+pages explain the setup step. Paystack keys are only needed for card
+payments in the marketplace.
 
 ## 1. Create a Supabase project
 
@@ -11,15 +15,29 @@ marketplace shows clearly-labelled **demo listings** instead.
    integration, the way the Joetech Shops storefront did it).
 2. In the Supabase dashboard, open the **SQL Editor** and run
    `supabase/schema.sql` in full. That creates the `produce_listings`,
-   `marketplace_orders` and `page_visits` tables, indexes and Row Level
-   Security policies.
-3. (Optional) Seed sample rows with `supabase/seed.sql` — it needs a real
-   farmer user id first; the file explains how.
+   `marketplace_orders`, `page_visits`, `profiles`, `forum_topics` and
+   `forum_replies` tables, indexes and Row Level Security policies.
+3. (Optional) Seed sample rows:
+   - Marketplace: `supabase/seed.sql` — it needs a real farmer user id
+     first; the file explains how.
+   - Forum: `supabase/seed-forum.sql` — loads the same 7 topics + 17
+     replies that shipped with the forum. Safe to run more than once.
 4. Create the Storage bucket: **Storage → New bucket**, name
    `produce-images`, **Public bucket ON**. The upload route stores files
    under `<farmer-user-id>/<uuid>.<ext>`; the bucket's own policies live
    under Storage → Policies (public SELECT; writes only via the
    service-role key).
+5. Make Joel the forum admin **after** he creates his account (sign up
+   at `/auth/signup` on the live site), by running this in the SQL
+   Editor:
+
+```sql
+update public.profiles set is_admin = true
+where id = (select id from auth.users where email = 'info@joetech360.ng');
+```
+
+The admin can delete any forum topic or reply; authors can delete
+their own.
 
 ## 2. Environment variables (Vercel → Project → Settings → Environment Variables)
 
@@ -79,7 +97,7 @@ Paystack needs the business verified before live payments — complete the
 CAC registration for Joetech first (same rule as the Joetech Shops
 storefront), then switch the Paystack keys from test to live.
 
-## 6. Visit statistics (/stats) and forum posting
+## 6. Visit statistics (/stats) and forum login
 
 - **/stats** counts page views from the `page_visits` table (created by
   `schema.sql`, step 1 above). No extra setup: once the Supabase env vars
@@ -89,10 +107,27 @@ storefront), then switch the Paystack keys from test to live.
   no historical data: counting starts the day the table and env vars are
   in place. `@vercel/analytics` is also installed, so Vercel's own
   Analytics dashboard shows page views too.
-- **Forum posting** (`/forum/new` and the reply form under each topic)
-  saves topics and comments as Markdown files in the repo through the
-  GitHub API — the same pattern as the Community ask form. It needs
-  `GITHUB_TOKEN` in Vercel (Project → Settings → Environment Variables),
-  a fine-grained token with contents:write on this repo. Until that is
-  set, the forms show an error and nothing is saved. New topics and
-  replies start as `pending` and appear only after review.
+- **Forum login** (`/auth/signup`, `/auth/login`, `/profile`, posting in
+  `/forum`) is Supabase Auth — the same project as the marketplace and
+  stats, no second project. Once `schema.sql` has run and the env vars
+  are in Vercel:
+  - Farmers sign up at `/auth/signup` (name, email, password, location)
+    or sign in at `/auth/login` with a password **or a magic link**
+    emailed to them (no password to remember).
+  - Supabase sends a confirmation email on signup when email
+    confirmation is on (the default in Supabase → Authentication →
+    Providers → Email). The link lands on `/auth/callback`, which signs
+    the user in. If signups should work without the email step, turn
+    "Confirm email" off there — but keep it on if spam accounts become a
+    problem.
+  - A profile row is created automatically on signup (trigger in
+    `schema.sql`); the user edits name, bio and location at `/profile`,
+    which also shows their topics and replies.
+  - Signed-in farmers post topics and replies straight into the
+    database — they appear immediately, no review queue. Guests can read
+    everything but see a sign-in prompt instead of the forms.
+  - Until Supabase is connected, the forum shows its Markdown seed
+    topics and the auth pages say plainly that login is not switched on
+    yet. **The old GitHub-commit posting path for the forum has been
+    removed** — the Community ask form (`/community/ask`) still uses the
+    GitHub pattern and still needs `GITHUB_TOKEN`.

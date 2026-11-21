@@ -127,3 +127,155 @@ create policy "Public can read page visits"
   using (true);
 -- No public insert/update/delete policies: writes happen only from the
 -- server (/api/stats/log route) with the service-role key.
+
+-- ---------------------------------------------------------------- profiles
+-- One row per signed-in user. Created automatically by the trigger
+-- below when a user signs up (display name + location come from the
+-- signup form). The forum and marketplace read the display name from
+-- here; the /profile page lets the user edit it.
+create table if not exists public.profiles (
+  id uuid primary key references auth.users (id) on delete cascade,
+  display_name text not null default 'Farmer',
+  bio text not null default '',
+  location text not null default '',
+  is_admin boolean not null default false,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+alter table public.profiles enable row level security;
+
+-- Anyone may read profiles (names show next to forum topics/replies).
+create policy "Public can read profiles"
+  on public.profiles for select
+  using (true);
+-- A user may insert/update only their own row.
+create policy "Users can insert their own profile"
+  on public.profiles for insert
+  with check (auth.uid() = id);
+create policy "Users can update their own profile"
+  on public.profiles for update
+  using (auth.uid() = id)
+  with check (auth.uid() = id);
+
+-- Fill is_admin for the site owner AFTER he creates his account:
+--   update public.profiles set is_admin = true
+--   where id = (select id from auth.users where email = 'info@joetech360.ng');
+
+-- Create the profile row automatically on signup.
+create or replace function public.handle_new_user()
+returns trigger
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  insert into public.profiles (id, display_name, location)
+  values (
+    new.id,
+    coalesce(new.raw_user_meta_data ->> 'display_name', split_part(new.email, '@', 1)),
+    coalesce(new.raw_user_meta_data ->> 'location', '')
+  )
+  on conflict (id) do nothing;
+  return new;
+end;
+$$;
+
+drop trigger if exists on_auth_user_created on auth.users;
+create trigger on_auth_user_created
+  after insert on auth.users
+  for each row execute function public.handle_new_user();
+
+-- ---------------------------------------------------------------- forum
+-- Farmers Forum: signed-in users post topics and replies. Guests can
+-- read everything; posting needs an account (see the policies below).
+-- Topics and replies appear immediately — there is no review queue.
+-- The admin (is_admin in profiles) can delete any topic or reply.
+--
+-- author_name / author_location are snapshots of the author's profile
+-- at posting time, so a topic still shows a name even if the author
+-- later changes theirs. author_id is NULL only on the seeded demo
+-- rows (supabase/seed-forum.sql), which have no real account behind
+-- them — those can only be removed by the admin.
+
+create table if not exists public.forum_topics (
+  id uuid primary key default gen_random_uuid(),
+  slug text not null unique,
+  title text not null,
+  category text not null check (category in (
+    'Crop Problems', 'Livestock', 'Pests & Diseases',
+    'Market & Prices', 'Farm Business', 'General'
+  )),
+  body text not null,
+  author_id uuid references auth.users (id) on delete set null,
+  author_name text not null,
+  author_location text not null default 'Nigeria',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create table if not exists public.forum_replies (
+  id uuid primary key default gen_random_uuid(),
+  topic_id uuid not null references public.forum_topics (id) on delete cascade,
+  body text not null,
+  author_id uuid references auth.users (id) on delete set null,
+  author_name text not null,
+  author_location text not null default 'Nigeria',
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+
+create index if not exists idx_forum_topics_slug on public.forum_topics (slug);
+create index if not exists idx_forum_topics_created on public.forum_topics (created_at desc);
+create index if not exists idx_forum_topics_author on public.forum_topics (author_id);
+create index if not exists idx_forum_replies_topic on public.forum_replies (topic_id);
+create index if not exists idx_forum_replies_created on public.forum_replies (created_at);
+create index if not exists idx_forum_replies_author on public.forum_replies (author_id);
+
+alter table public.forum_topics enable row level security;
+alter table public.forum_replies enable row level security;
+
+-- Helper: true when the signed-in user is an admin.
+create or replace function public.is_admin()
+returns boolean
+language sql
+security definer
+stable
+set search_path = public
+as $$
+  select exists (
+    select 1 from public.profiles
+    where id = auth.uid() and is_admin = true
+  );
+$$;
+
+-- TOPICS: anyone may read. Only signed-in users may insert, and only
+-- as themselves. Authors and the admin may update/delete.
+create policy "Public can read forum topics"
+  on public.forum_topics for select
+  using (true);
+create policy "Signed-in users can post topics"
+  on public.forum_topics for insert
+  with check (auth.uid() is not null and auth.uid() = author_id);
+create policy "Authors and admin can update topics"
+  on public.forum_topics for update
+  using (auth.uid() = author_id or public.is_admin())
+  with check (auth.uid() = author_id or public.is_admin());
+create policy "Authors and admin can delete topics"
+  on public.forum_topics for delete
+  using (auth.uid() = author_id or public.is_admin());
+
+-- REPLIES: same rules as topics.
+create policy "Public can read forum replies"
+  on public.forum_replies for select
+  using (true);
+create policy "Signed-in users can post replies"
+  on public.forum_replies for insert
+  with check (auth.uid() is not null and auth.uid() = author_id);
+create policy "Authors and admin can update replies"
+  on public.forum_replies for update
+  using (auth.uid() = author_id or public.is_admin())
+  with check (auth.uid() = author_id or public.is_admin());
+create policy "Authors and admin can delete replies"
+  on public.forum_replies for delete
+  using (auth.uid() = author_id or public.is_admin());
