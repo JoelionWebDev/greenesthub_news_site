@@ -21,6 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/marketplace/sell',
     '/community',
     '/community/ask',
+    '/forum',
+    '/forum/new',
+    '/stats',
     '/blog',
   ];
   return [

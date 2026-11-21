@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import FloatingButtons from "@/components/FloatingButtons";
+import VisitLogger from "@/components/VisitLogger";
 import { SITE_URL } from "@/lib/site";
 
 const geistSans = Geist({
@@ -46,6 +49,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main>{children}</main>
         <SiteFooter />
         <FloatingButtons />
+        {/* VisitLogger reads usePathname(), a runtime hook — it must sit
+            inside Suspense so static pages can still prerender. */}
+        <Suspense>
+          <VisitLogger />
+        </Suspense>
+        <Analytics />
       </body>
     </html>
   );
