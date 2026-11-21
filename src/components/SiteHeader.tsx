@@ -100,6 +100,7 @@ export default function SiteHeader() {
           <Link href="/tools">Tools</Link>
           <Link href="/marketplace">Marketplace</Link>
           <Link href="/community">Community</Link>
+          <Link href="/forum">Forum</Link>
           <Link href="/blog">All Blogs</Link>
           <Link href="/contact">Contact</Link>
         </nav>
@@ -133,6 +134,9 @@ export default function SiteHeader() {
           </Link>
           <Link href="/community" onClick={() => setMenuOpen(false)}>
             💬 Community
+          </Link>
+          <Link href="/forum" onClick={() => setMenuOpen(false)}>
+            🗣️ Forum
           </Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>
             📖 All Blogs

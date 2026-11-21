@@ -9,10 +9,12 @@ const FOOTER_LINKS = [
   { href: '/tools', label: 'Farmer Tools' },
   { href: '/marketplace', label: 'Marketplace' },
   { href: '/community', label: 'Community' },
+  { href: '/forum', label: 'Forum' },
   { href: '/blog', label: 'All Blogs' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
   { href: '/privacy', label: 'Privacy' },
+  { href: '/stats', label: 'Site Statistics' },
 ];
 
 export default function SiteFooter() {
