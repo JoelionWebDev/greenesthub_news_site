@@ -1,34 +1,49 @@
-'use client';
-
-import { useActionState } from 'react';
 import Link from 'next/link';
-import { postTopicAction, type ActionState } from '../actions';
-import { FORUM_CATEGORIES } from '@/lib/forum-categories';
+import type { Metadata } from 'next';
+import { connection } from 'next/server';
+import { getCurrentUser } from '@/lib/supabase/server';
+import { SITE_URL } from '@/lib/site';
+import NewTopicForm from './NewTopicForm';
 
-const initialState: ActionState = { ok: false };
+export const metadata: Metadata = {
+  title: 'Start a new topic',
+  description:
+    'Post your farming problem in the Greennest Hub Farmers Forum and get opinions from other farmers.',
+  alternates: { canonical: `${SITE_URL}/forum/new` },
+  robots: { index: false, follow: false },
+};
 
-export default function NewTopicPage() {
-  const [state, formAction] = useActionState(postTopicAction, initialState);
+export default async function NewTopicPage() {
+  // Auth state is per request.
+  await connection();
+  const user = await getCurrentUser();
 
-  if (state.ok) {
+  if (!user) {
     return (
       <div className="wrap">
-        <article className="article">
-          <h1>Thank you! 🙏</h1>
-          <div className="article-body">
-            <p>
-              Your topic has been received. We review every topic before it appears, so it
-              will show on the <Link href="/forum">Forum page</Link> once it is checked —
-              usually within a day or two. Other farmers will then be able to add their
-              opinions.
-            </p>
-            <p>
-              <Link href="/forum" className="category-card-link">
-                Back to the forum →
-              </Link>
-            </p>
-          </div>
-        </article>
+        <header className="page-head">
+          <h1>✍️ Start a new topic</h1>
+          <p>
+            Describe your farming problem clearly — what is happening, when it
+            started, and what you have tried so far. The more detail you give,
+            the better the answers from other farmers will be.
+          </p>
+        </header>
+        <div className="forum-signin-prompt" role="note">
+          <h3>Please sign in first</h3>
+          <p>
+            You need an account to start a topic — your name and location come
+            from your profile, so other farmers know who is asking.
+          </p>
+          <p>
+            <Link href="/auth/login" className="btn btn-primary">
+              Sign in →
+            </Link>{' '}
+            <Link href="/auth/signup" className="btn btn-secondary">
+              Create an account →
+            </Link>
+          </p>
+        </div>
       </div>
     );
   }
@@ -38,59 +53,12 @@ export default function NewTopicPage() {
       <header className="page-head">
         <h1>✍️ Start a new topic</h1>
         <p>
-          Describe your farming problem clearly — what is happening, when it started, and
-          what you have tried so far. The more detail you give, the better the answers
-          from other farmers will be.
+          Describe your farming problem clearly — what is happening, when it
+          started, and what you have tried so far. The more detail you give,
+          the better the answers from other farmers will be.
         </p>
       </header>
-      <form action={formAction} className="calc-form">
-        {state.error && <p className="form-error">{state.error}</p>}
-        <label>
-          Short title for your topic
-          <input
-            type="text"
-            name="title"
-            placeholder="e.g. My cassava leaves are curling and turning yellow"
-            required
-          />
-        </label>
-        <label>
-          Your name
-          <input type="text" name="name" placeholder="e.g. Adaeze" required />
-        </label>
-        <label>
-          Where do you farm? (state or town)
-          <input type="text" name="location" placeholder="e.g. Enugu, Enugu State" required />
-        </label>
-        <label>
-          Category
-          <select name="category" defaultValue="Crop Problems">
-            {FORUM_CATEGORIES.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Your problem or topic
-          <textarea
-            name="body"
-            rows={7}
-            placeholder="Tell us what is happening on your farm. When did it start? What have you tried? What do you want to know?"
-            required
-          />
-        </label>
-        <p className="calc-note">
-          Your topic will be visible to everyone once published. Do not put your phone
-          number or home address in it.
-        </p>
-        <div className="form-actions">
-          <button type="submit" className="btn btn-primary">
-            Post my topic
-          </button>
-        </div>
-      </form>
+      <NewTopicForm />
     </div>
   );
 }
