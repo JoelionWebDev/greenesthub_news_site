@@ -103,3 +103,27 @@ create policy "Farmers can read orders for their own listings"
 --     /api/marketplace/upload route), never directly from the browser.
 -- The upload route stores files under <farmer-user-id>/<uuid>.<ext>, so a
 -- farmer can only ever upload into their own folder.
+
+-- ---------------------------------------------------------------- page visits
+-- Powers the /stats page: one row per page view (page path + timestamp
+-- only — no IP address, no cookies, no personal data of any kind).
+-- IMPORTANT: there is NO historical visit data. Counting starts the day
+-- this table exists and the VisitLogger starts logging, so /stats shows
+-- real zeros until then and "counting since" is the first logged visit.
+create table if not exists public.page_visits (
+  id uuid primary key default gen_random_uuid(),
+  path text not null,
+  visited_at timestamptz not null default now()
+);
+
+create index if not exists idx_page_visits_path on public.page_visits (path);
+create index if not exists idx_page_visits_time on public.page_visits (visited_at desc);
+
+alter table public.page_visits enable row level security;
+
+-- Anyone may READ visit counts (the /stats page is public).
+create policy "Public can read page visits"
+  on public.page_visits for select
+  using (true);
+-- No public insert/update/delete policies: writes happen only from the
+-- server (/api/stats/log route) with the service-role key.

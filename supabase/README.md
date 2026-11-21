@@ -10,8 +10,9 @@ marketplace shows clearly-labelled **demo listings** instead.
 1. Create a project at supabase.com (or add one through Vercel's Supabase
    integration, the way the Joetech Shops storefront did it).
 2. In the Supabase dashboard, open the **SQL Editor** and run
-   `supabase/schema.sql` in full. That creates the `produce_listings` and
-   `marketplace_orders` tables, indexes and Row Level Security policies.
+   `supabase/schema.sql` in full. That creates the `produce_listings`,
+   `marketplace_orders` and `page_visits` tables, indexes and Row Level
+   Security policies.
 3. (Optional) Seed sample rows with `supabase/seed.sql` — it needs a real
    farmer user id first; the file explains how.
 4. Create the Storage bucket: **Storage → New bucket**, name
@@ -77,3 +78,21 @@ replayed webhook passes neither check.
 Paystack needs the business verified before live payments — complete the
 CAC registration for Joetech first (same rule as the Joetech Shops
 storefront), then switch the Paystack keys from test to live.
+
+## 6. Visit statistics (/stats) and forum posting
+
+- **/stats** counts page views from the `page_visits` table (created by
+  `schema.sql`, step 1 above). No extra setup: once the Supabase env vars
+  are in Vercel, every page view is logged (page path + timestamp only —
+  no personal data) and the counts appear on `/stats` for the last 24
+  hours, 48 hours, 7 days, 24 days, or since tracking started. There is
+  no historical data: counting starts the day the table and env vars are
+  in place. `@vercel/analytics` is also installed, so Vercel's own
+  Analytics dashboard shows page views too.
+- **Forum posting** (`/forum/new` and the reply form under each topic)
+  saves topics and comments as Markdown files in the repo through the
+  GitHub API — the same pattern as the Community ask form. It needs
+  `GITHUB_TOKEN` in Vercel (Project → Settings → Environment Variables),
+  a fine-grained token with contents:write on this repo. Until that is
+  set, the forms show an error and nothing is saved. New topics and
+  replies start as `pending` and appear only after review.
