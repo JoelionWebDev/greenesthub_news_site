@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import AuthNav from './AuthNav';
 import { CATEGORIES } from '@/lib/categories';
 
 const FARMING = CATEGORIES.filter((c) => c.group === 'farming');
@@ -103,6 +104,7 @@ export default function SiteHeader() {
           <Link href="/forum">Forum</Link>
           <Link href="/blog">All Blogs</Link>
           <Link href="/contact">Contact</Link>
+          <AuthNav />
         </nav>
       </div>
 
@@ -144,6 +146,8 @@ export default function SiteHeader() {
           <Link href="/contact" onClick={() => setMenuOpen(false)}>
             ✉️ Contact
           </Link>
+          <p className="mobile-menu-heading">Account</p>
+          <AuthNav onNavigate={() => setMenuOpen(false)} />
         </nav>
       )}
     </header>
