@@ -1,42 +1,73 @@
 'use server';
 
+import { redirect } from 'next/navigation';
+import { revalidatePath } from 'next/cache';
 import { slugify } from '@/lib/posts';
 import { isForumCategory } from '@/lib/forum';
-import { commitCommentToGitHub, commitTopicToGitHub } from '@/lib/github';
+import { supabaseAuthServer } from '@/lib/supabase/server';
 
 export type ActionState = {
   ok: boolean;
   error?: string;
 };
 
-function escapeYaml(value: string): string {
-  return value.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+/**
+ * The signed-in user + their display name/location (from their profile,
+ * falling back to the signup metadata). Posting is for signed-in users
+ * only — guests see a sign-in prompt instead of the form.
+ */
+async function requireUser() {
+  const sb = await supabaseAuthServer();
+  if (!sb) {
+    return { sb: null, user: null, name: '', location: '', error: 'Login is not switched on yet — Supabase is not connected.' };
+  }
+  const { data } = await sb.auth.getUser();
+  if (!data.user) {
+    return { sb, user: null, name: '', location: '', error: 'Please sign in to post.' };
+  }
+  const { data: profile } = await sb
+    .from('profiles')
+    .select('display_name, location')
+    .eq('id', data.user.id)
+    .maybeSingle();
+  const meta = (data.user.user_metadata ?? {}) as Record<string, string>;
+  return {
+    sb,
+    user: data.user,
+    name: profile?.display_name || meta.display_name || data.user.email?.split('@')[0] || 'A farmer',
+    location: profile?.location || meta.location || 'Nigeria',
+    error: '',
+  };
+}
+
+/** Find a free slug for a new topic title (appends -2, -3, …). */
+async function freeSlug(
+  sb: NonNullable<Awaited<ReturnType<typeof supabaseAuthServer>>>,
+  baseSlug: string,
+): Promise<string> {
+  for (let attempt = 0; attempt < 10; attempt++) {
+    const slug = attempt === 0 ? baseSlug : `${baseSlug}-${attempt + 1}`;
+    const { data } = await sb.from('forum_topics').select('id').eq('slug', slug).maybeSingle();
+    if (!data) return slug;
+  }
+  return `${baseSlug}-${Date.now().toString(36)}`;
 }
 
 /**
- * A farmer starts a new forum topic: save it as a Markdown file in
- * content/forum/ via the GitHub API. It starts as "pending" — it only
- * appears on the Forum page after review. No login needed; the topic is
- * public once published, so the form warns against sharing phone numbers.
+ * A signed-in farmer starts a new forum topic. It is saved straight
+ * into Supabase and appears on the Forum page immediately — no review
+ * queue, no GitHub commit. The admin can delete any topic.
  */
 export async function postTopicAction(
   _prevState: ActionState,
   formData: FormData,
 ): Promise<ActionState> {
   const title = String(formData.get('title') ?? '').trim();
-  const name = String(formData.get('name') ?? '').trim();
-  const location = String(formData.get('location') ?? '').trim();
   const category = String(formData.get('category') ?? '').trim();
   const body = String(formData.get('body') ?? '').trim();
 
   if (!title || title.length < 5) {
     return { ok: false, error: 'Please give your topic a short title (at least 5 characters).' };
-  }
-  if (!name || name.length < 2) {
-    return { ok: false, error: 'Please tell us your name.' };
-  }
-  if (!location || location.length < 2) {
-    return { ok: false, error: 'Please tell us where you farm (state or town).' };
   }
   if (!isForumCategory(category)) {
     return { ok: false, error: 'Please choose a category.' };
@@ -44,53 +75,42 @@ export async function postTopicAction(
   if (!body || body.length < 20) {
     return { ok: false, error: 'Please describe your problem or topic in at least 20 characters.' };
   }
-
-  const date = new Date().toISOString().slice(0, 10);
-  const baseSlug = slugify(title);
-  const markdown = [
-    '---',
-    `title: "${escapeYaml(title)}"`,
-    `slug: ${baseSlug}`,
-    `category: "${escapeYaml(category)}"`,
-    `author: "${escapeYaml(name)}"`,
-    `location: "${escapeYaml(location)}"`,
-    `date: ${date}`,
-    'status: pending',
-    '---',
-    '',
-    body,
-    '',
-  ].join('\n');
-
-  const result = await commitTopicToGitHub(baseSlug, markdown, title);
-  if (!result.ok) {
-    return { ok: false, error: result.error };
+  if (body.length > 5000) {
+    return { ok: false, error: 'Please keep your topic under 5,000 characters.' };
   }
-  return { ok: true };
+
+  const { sb, user, name, location, error } = await requireUser();
+  if (!sb || !user) return { ok: false, error: error || 'Please sign in to post.' };
+
+  const slug = await freeSlug(sb, slugify(title));
+  const { error: insertError } = await sb.from('forum_topics').insert({
+    slug,
+    title,
+    category,
+    body,
+    author_id: user.id,
+    author_name: name,
+    author_location: location,
+  });
+  if (insertError) return { ok: false, error: insertError.message };
+
+  revalidatePath('/forum');
+  redirect(`/forum/${slug}`);
 }
 
 /**
- * Anyone comments on a topic: save it as a Markdown file in
- * content/forum/comments/ via the GitHub API. It starts as "pending" —
- * it only appears under the topic after review.
+ * A signed-in farmer replies to a topic. Saved straight into Supabase
+ * and shown under the topic immediately.
  */
 export async function postCommentAction(
   _prevState: ActionState,
   formData: FormData,
 ): Promise<ActionState> {
   const topicSlug = String(formData.get('topicSlug') ?? '').trim();
-  const name = String(formData.get('name') ?? '').trim();
-  const location = String(formData.get('location') ?? '').trim();
   const comment = String(formData.get('comment') ?? '').trim();
 
   if (!topicSlug) {
     return { ok: false, error: 'This comment has no topic to attach to. Please reload the page and try again.' };
-  }
-  if (!name || name.length < 2) {
-    return { ok: false, error: 'Please tell us your name.' };
-  }
-  if (!location || location.length < 2) {
-    return { ok: false, error: 'Please tell us where you are (state or town).' };
   }
   if (!comment || comment.length < 5) {
     return { ok: false, error: 'Please write your opinion or advice (at least 5 characters).' };
@@ -99,23 +119,56 @@ export async function postCommentAction(
     return { ok: false, error: 'Please keep your comment under 2,000 characters.' };
   }
 
-  const date = new Date().toISOString().slice(0, 10);
-  const markdown = [
-    '---',
-    `topic: ${topicSlug}`,
-    `author: "${escapeYaml(name)}"`,
-    `location: "${escapeYaml(location)}"`,
-    `date: ${date}`,
-    'status: pending',
-    '---',
-    '',
-    comment,
-    '',
-  ].join('\n');
+  const { sb, user, name, location, error } = await requireUser();
+  if (!sb || !user) return { ok: false, error: error || 'Please sign in to reply.' };
 
-  const result = await commitCommentToGitHub(topicSlug, markdown);
-  if (!result.ok) {
-    return { ok: false, error: result.error };
+  const { data: topic } = await sb
+    .from('forum_topics')
+    .select('id')
+    .eq('slug', topicSlug)
+    .maybeSingle();
+  if (!topic) {
+    return { ok: false, error: 'That topic no longer exists.' };
   }
+
+  const { error: insertError } = await sb.from('forum_replies').insert({
+    topic_id: (topic as { id: string }).id,
+    body: comment,
+    author_id: user.id,
+    author_name: name,
+    author_location: location,
+  });
+  if (insertError) return { ok: false, error: insertError.message };
+
+  revalidatePath(`/forum/${topicSlug}`);
+  return { ok: true };
+}
+
+/** The admin (or the topic's author) deletes a topic and its replies. */
+export async function deleteTopicAction(topicSlug: string): Promise<ActionState> {
+  const { sb, user, error } = await requireUser();
+  if (!sb || !user) return { ok: false, error: error || 'Please sign in.' };
+  const { error: deleteError } = await sb
+    .from('forum_topics')
+    .delete()
+    .eq('slug', topicSlug);
+  if (deleteError) return { ok: false, error: deleteError.message };
+  revalidatePath('/forum');
+  redirect('/forum');
+}
+
+/** The admin (or the reply's author) deletes one reply. */
+export async function deleteReplyAction(
+  replyId: string,
+  topicSlug: string,
+): Promise<ActionState> {
+  const { sb, user, error } = await requireUser();
+  if (!sb || !user) return { ok: false, error: error || 'Please sign in.' };
+  const { error: deleteError } = await sb
+    .from('forum_replies')
+    .delete()
+    .eq('id', replyId);
+  if (deleteError) return { ok: false, error: deleteError.message };
+  revalidatePath(`/forum/${topicSlug}`);
   return { ok: true };
 }

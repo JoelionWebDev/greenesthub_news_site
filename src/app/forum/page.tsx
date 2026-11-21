@@ -53,8 +53,8 @@ export default async function ForumPage({
   const category = isForumCategory(params.category ?? "") ? params.category : "";
   const q = (params.q ?? "").trim();
 
-  const topics = getPublishedTopics();
-  const counts = getCommentCounts();
+  const topics = await getPublishedTopics();
+  const counts = await getCommentCounts();
   const categoryCounts: Record<string, number> = {};
   for (const t of topics) categoryCounts[t.category] = (categoryCounts[t.category] ?? 0) + 1;
 
@@ -182,8 +182,9 @@ export default async function ForumPage({
         )}
 
         <p className="section-more">
-          Every topic and reply is reviewed before it appears, so the forum
-          stays helpful and respectful.{" "}
+          Topics and replies appear immediately once you post them — please
+          keep it helpful and respectful. Signed-in farmers can post; the
+          admin can remove anything that breaks that.{" "}
           <Link href="/community" className="category-card-link">
             Prefer a direct answer from our team? Ask in the Community →
           </Link>
