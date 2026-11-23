@@ -44,6 +44,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${geistSans.variable}`}>
+      <head>
+        {/* Google Tag Manager (GTM-K5VQQXF3) — added 2026-11-23 at Joel's request */}
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-K5VQQXF3"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());`,
+          }}
+        />
+      </head>
       <body>
         <SiteHeader />
         <main>{children}</main>
